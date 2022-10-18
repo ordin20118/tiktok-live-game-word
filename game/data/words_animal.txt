@@ -1,0 +1,48 @@
+{"word":"고양이","consonant":"ㄱㅇㅇ","hints":["동물","바퀴 두 개"]}
+{"word":"강아지","consonant":"ㄱㅇㅈ","hints":["동물","바퀴 두 개"]}
+{"word":"치타","consonant":"ㅊㅌ","hints":["빠름","네 발 동물"]}
+{"word":"사자","consonant":"ㅅㅈ","hints":["네 발 동물","밀림의 왕"]}
+{"word":"하마","consonant":"ㅎㅁ","hints":["동물",""]}
+{"word":"코끼리","consonant":"ㅋㄲㄹ","hints":["동물",""]}
+{"word":"곰","consonant":"ㄱ","hints":["동물",""]}
+{"word":"돼지","consonant":"ㄷㅈ","hints":["동물",""]}
+{"word":"닭","consonant":"ㄷ","hints":["동물",""]}
+{"word":"오리","consonant":"ㅇㄹ","hints":["동물",""]}
+{"word":"참새","consonant":"ㅊㅅ","hints":["동물",""]}
+{"word":"퓨마","consonant":"ㅍㅁ","hints":["동물",""]}
+{"word":"악어","consonant":"ㅇㅇ","hints":["동물",""]}
+{"word":"판다","consonant":"ㅍㄷ","hints":["동물",""]}
+{"word":"젖소","consonant":"ㅈㅅ","hints":["동물",""]}
+{"word":"낙타","consonant":"ㄴㅌ","hints":["동물",""]}
+{"word":"얼룩말","consonant":"ㅇㄹㅁ","hints":["동물",""]}
+{"word":"코뿔소","consonant":"ㅋㅃㅅ","hints":["동물",""]}
+{"word":"토끼","consonant":"ㅌㄲ","hints":["동물",""]}
+{"word":"햄스터","consonant":"ㅎㅅㅌ","hints":["동물","귀여운 쥐"]}
+{"word":"코뿔소","consonant":"ㅋㅃㅅ","hints":["동물",""]}
+{"word":"기린","consonant":"ㄱㄹ","hints":["동물",""]}
+{"word":"타조","consonant":"ㅌㅈ","hints":["동물",""]}
+{"word":"호랑이","consonant":"ㅎㄹㅇ","hints":["동물",""]}
+{"word":"멧돼지","consonant":"ㅁㄷㅈ","hints":["동물",""]}
+{"word":"원숭이","consonant":"ㅇㅅㅇ","hints":["동물",""]}
+{"word":"거위","consonant":"ㄱㅇ","hints":["동물",""]}
+{"word":"푸들","consonant":"ㅍㄷ","hints":["멍멍이",""]}
+{"word":"양","consonant":"ㅇ","hints":["동물",""]}
+{"word":"염소","consonant":"ㅇㅅ","hints":["동물",""]}
+{"word":"소","consonant":"ㅅ","hints":["동물",""]}
+{"word":"진돗개","consonant":"ㅈㄷㄱ","hints":["멍멍이",""]}
+{"word":"거북","consonant":"ㄱㅂ","hints":["동물","장수"]}
+{"word":"돌고래","consonant":"ㄷㄱㄹ","hints":["동물",""]}
+{"word":"고래","consonant":"ㄱㄹ","hints":["동물",""]}
+{"word":"가오리","consonant":"ㄱㅇㄹ","hints":["동물",""]}
+{"word":"물개","consonant":"ㅁㄱ","hints":["동물",""]}
+{"word":"펭귄","consonant":"ㅍㄱ","hints":["동물",""]}
+{"word":"북극곰","consonant":"ㅂㄱㄱ","hints":["동물",""]}
+{"word":"가재","consonant":"ㄱㅈ","hints":["동물",""]}
+{"word":"도마뱀","consonant":"ㄷㅁㅂ","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}

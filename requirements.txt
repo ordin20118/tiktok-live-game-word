@@ -1,0 +1,10 @@
+pygame
+websockets
+asyncio
+websocket
+websocket-client
+pillow
+numpy
+unicode
+emoji
+requests

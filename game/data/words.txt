@@ -1,0 +1,237 @@
+{"word":"","consonant":"","hints":[""]}
+{"word":"마음","consonant":"ㅁㅇ","hints":["사람이 본래부터 지닌 성격이나 품성","사람의 생각, 감정, 기억 따위가 생기거나 자리 잡는 공간이나 위치"]}
+{"word":"자전거","consonant":"ㅈㅈㄱ","hints":["탈것","바퀴 두 개"]}
+{"word":"나무","consonant":"ㄴㅁ","hints":["초록","땔감"]}
+{"word":"잔디","consonant":"ㅈㄷ","hints":["초록"]}
+{"word":"소나무","consonant":"ㅅㄴㅁ","hints":["초록"]}
+{"word":"바다","consonant":"ㅂㄷ","hints":["파란색","육지를 제외한 부분"]}
+{"word":"바보","consonant":"ㅂㅂ","hints":["지능 부족"]}
+
+{"word":"고민","consonant":"ㄱㅁ","hints":[""]}
+{"word":"순서","consonant":"ㅅㅅ","hints":[""]}
+{"word":"통장","consonant":"ㅌㅈ","hints":[""]}
+{"word":"파마","consonant":"ㅍㅁ","hints":[""]}
+{"word":"토지","consonant":"ㅌㅈ","hints":["땅"]}
+{"word":"응용","consonant":"ㅇㅇ","hints":[""]}
+{"word":"헌병","consonant":"ㅎㅂ","hints":[""]}
+{"word":"소나기","consonant":"ㅅㄴㄱ","hints":[""]}
+{"word":"태풍","consonant":"ㅌㅍ","hints":[""]}
+{"word":"바람","consonant":"ㅂㄹ","hints":[""]}
+{"word":"삼국지","consonant":"ㅅㄱㅈ","hints":[""]}
+{"word":"댄스","consonant":"ㄷㅅ","hints":["빵댕이 흔들흔들"]}
+{"word":"소생","consonant":"ㅅㅅ","hints":["다시 살아남"]}
+{"word":"수원","consonant":"ㅅㅇ","hints":["지역"]}
+{"word":"보답","consonant":"ㅂㄷ","hints":["은혜를 갚음"]}
+{"word":"초성퀴즈","consonant":"ㅊㅅㅋㅈ","hints":["지금 하는거"]}
+{"word":"머리띠","consonant":"ㅁㄹㄸ","hints":["머리에 하는거"]}
+{"word":"영토","consonant":"ㅇㅌ","hints":["구역"]}
+{"word":"눈물","consonant":"ㄴㅁ","hints":["슬픔"]}
+{"word":"지폐","consonant":"ㅈㅍ","hints":["돈"]}
+{"word":"지갑","consonant":"ㅈㄱ","hints":["돈 가방"]}
+{"word":"동전","consonant":"ㄷㅈ","hints":["돈"]}
+{"word":"신분증","consonant":"ㅅㅂㅈ","hints":["민증"]}
+{"word":"용품","consonant":"ㅇㅍ","hints":["물품"]}
+{"word":"분리수거","consonant":"ㅂㄹㅅㄱ","hints":["쓰레기"]}
+{"word":"쓰레기","consonant":"ㅆㄹㄱ","hints":["버림"]}
+{"word":"밀짚모자","consonant":"ㅁㅈㅁㅈ","hints":["모자"]}
+{"word":"이상형","consonant":"ㅇㅅㅎ","hints":["가질 수 없는 것"]}
+{"word":"행운","consonant":"ㅎㅇ","hints":["좋은 운수"]}
+{"word":"불행","consonant":"ㅂㅎ","hints":["행복x"]}
+{"word":"행복","consonant":"ㅎㅂ","hints":["기모리"]}
+{"word":"항복","consonant":"ㅎㅂ","hints":[""]}
+{"word":"주몽","consonant":"ㅈㅁ","hints":[""]}
+{"word":"경찰","consonant":"ㄱㅊ","hints":[""]}
+{"word":"가래","consonant":"ㄱㄹ","hints":[""]}
+{"word":"인형","consonant":"ㅇㅎ","hints":[""]}
+{"word":"카페","consonant":"ㅋㅍ","hints":[""]}
+{"word":"인정","consonant":"ㅇㅈ","hints":[""]}
+{"word":"인간","consonant":"ㅇㄱ","hints":[""]}
+{"word":"사람","consonant":"ㅅㄹ","hints":[""]}
+{"word":"소원","consonant":"ㅅㅇ","hints":[""]}
+{"word":"사위","consonant":"ㅅㅇ","hints":["딸의 남편"]}
+{"word":"심장","consonant":"ㅅㅈ","hints":[""]}
+{"word":"창문","consonant":"ㅊㅁ","hints":["문"]}
+{"word":"소방관","consonant":"ㅅㅂㄱ","hints":["화재"]}
+{"word":"주사위","consonant":"ㅈㅅㅇ","hints":["정육면체의 면에 하나에서 여섯까지의 점을 새긴 것"]}
+{"word":"날씨","consonant":"ㄴㅆ","hints":[""]}
+{"word":"태양","consonant":"ㅌㅇ","hints":["태양계의 중심"]}
+{"word":"제주도","consonant":"ㅈㅈㄷ","hints":["혼저옵서예"]}
+{"word":"긴장","consonant":"ㄱㅈ","hints":["마음을 조이는 상태"]}
+{"word":"거품","consonant":"ㄱㅍ","hints":[""]}
+{"word":"공포","consonant":"ㄱㅍ","hints":[""]}
+{"word":"한글","consonant":"ㅎㄱ","hints":[""]}
+{"word":"학교","consonant":"ㅎㄱ","hints":[""]}
+{"word":"마술","consonant":"ㅁㅅ","hints":[""]}
+{"word":"미술","consonant":"ㅁㅅ","hints":[""]}
+{"word":"변비","consonant":"ㅂㅂ","hints":[""]}
+{"word":"우주","consonant":"ㅇㅈ","hints":[""]}
+{"word":"목성","consonant":"ㅁㅅ","hints":[""]}
+{"word":"목소리","consonant":"ㅁㅅㄹ","hints":["목"]}
+{"word":"지구","consonant":"ㅈㄱ","hints":["우리가 사는 곳"]}
+{"word":"우산","consonant":"ㅇㅅ","hints":["비 올때"]}
+{"word":"파산","consonant":"ㅍㅅ","hints":["망함"]}
+{"word":"피신","consonant":"ㅍㅅ","hints":["몸을 숨김"]}
+{"word":"고무","consonant":"ㄱㅁ","hints":[""]}
+{"word":"가방","consonant":"ㄱㅂ","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+{"word":"아령","consonant":"ㅇㄹ","hints":["운동 기구",""]}
+{"word":"헬스","consonant":"ㅎㅅ","hints":["운동"]}
+{"word":"운동","consonant":"ㅎㅅ","hints":[""]}
+{"word":"근육","consonant":"ㄱㅇ","hints":["운동"]}
+{"word":"테니스","consonant":"ㅌㄴㅅ","hints":["스포츠"]}
+{"word":"축구","consonant":"ㅊㄱ","hints":["스포츠"]}
+{"word":"배구","consonant":"ㅂㄱ","hints":["스포츠"]}
+{"word":"농구","consonant":"ㄴㄱ","hints":["스포츠"]}
+{"word":"야구","consonant":"ㅇㄱ","hints":["스포츠"]}
+{"word":"수영","consonant":"ㅅㅇ","hints":["스포츠"]}
+{"word":"골프","consonant":"ㄱㅍ","hints":["스포츠"]}
+{"word":"펜싱","consonant":"ㅍㅅ","hints":["스포츠"]}
+{"word":"경마","consonant":"ㄱㅁ","hints":["스포츠"]}
+{"word":"등산","consonant":"ㄷㅅ","hints":["운동"]}
+{"word":"","consonant":"","hints":["운동"]}
+{"word":"","consonant":"","hints":["운동"]}
+{"word":"","consonant":"","hints":["운동"]}
+{"word":"","consonant":"","hints":["운동"]}
+{"word":"","consonant":"","hints":["운동"]}
+
+
+
+
+
+{"word":"회사","consonant":"ㅎㅅ","hints":["일 하는 곳"]}
+{"word":"상사","consonant":"ㅅㅅ","hints":["회사"]}
+{"word":"휴가","consonant":"ㅎㄱ","hints":["회사"]}
+{"word":"근무","consonant":"ㄱㅁ","hints":["회사"]}
+{"word":"퇴사","consonant":"ㅌㅅ","hints":["회사"]}
+{"word":"입사","consonant":"ㅇㅅ","hints":["회사"]}
+{"word":"출근","consonant":"ㅊㄱ","hints":["회사"]}
+{"word":"퇴근","consonant":"ㅌㄱ","hints":["회사"]}
+{"word":"","consonant":"","hints":["회사"]}
+{"word":"","consonant":"","hints":["회사"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
+{"word":"기계","consonant":"ㄱㄱ","hints":["",""]}
+{"word":"컴퓨터","consonant":"ㅋㅍㅌ","hints":["",""]}
+{"word":"마우스","consonant":"ㅁㅇㅅ","hints":["",""]}
+{"word":"키보드","consonant":"ㅋㅂㄷ","hints":["",""]}
+{"word":"핸드폰","consonant":"ㅎㄷㅍ","hints":[""]}
+{"word":"모니터","consonant":"ㅁㄴㅌ","hints":[""]}
+{"word":"자동차","consonant":"ㅈㄷㅊ","hints":[""]}
+{"word":"버스","consonant":"ㅂㅅ","hints":["대중교통"]}
+{"word":"기차","consonant":"ㄱㅊ","hints":["대중교통"]}
+{"word":"택시","consonant":"ㅌㅅ","hints":["대중교통"]}
+{"word":"비행기","consonant":"ㅂㅎㄱ","hints":[""]}
+{"word":"지하철","consonant":"ㅈㅎㅊ","hints":["대중교통"]}
+{"word":"공항","consonant":"ㄱㅎ","hints":["비행기 타는 곳"]}
+{"word":"마이크","consonant":"ㅁㅇㅋ","hints":[""]}
+{"word":"스피커","consonant":"ㅅㅍㅋ","hints":[""]}
+{"word":"네트워크","consonant":"ㄴㅌㅇㅋ","hints":[""]}
+{"word":"카메라","consonant":"ㅋㅁㄹ","hints":[""]}
+{"word":"삼각대","consonant":"ㅅㄱㄷ","hints":["카메라"]}
+{"word":"렌즈","consonant":"ㄹㅈ","hints":["카메라"]}
+{"word":"텔레비전","consonant":"ㅌㄹㅂㅈ","hints":["전자 제품"]}
+{"word":"라디오","consonant":"ㄹㄷㅇ","hints":["전자 제품"]}
+{"word":"에어컨","consonant":"ㅇㅇㅋ","hints":["전자 제품"]}
+{"word":"선풍기","consonant":"ㅅㅍㄱ","hints":["전자 제품"]}
+{"word":"전구","consonant":"ㅈㄱ","hints":["빛"]}
+{"word":"라디에이터","consonant":"ㄹㄷㅇㅇㅌ","hints":["따끈따끈"]}
+{"word":"난로","consonant":"ㄴㄹ","hints":["따끈따끈"]}
+{"word":"세탁기","consonant":"ㅅㅌㄱ","hints":["빨래"]}
+{"word":"시장","consonant":"ㅅㅈ","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
+
+{"word":"카카오","consonant":"ㅋㅋㅇ","hints":[""]}
+{"word":"네이버","consonant":"ㄴㅇㅂ","hints":[""]}
+{"word":"포스트잇","consonant":"ㅍㅅㅌㅇ","hints":[""]}
+{"word":"메모장","consonant":"ㅁㅁㅈ","hints":["메모하는 곳"]}
+{"word":"정수기","consonant":"ㅈㅅㄱ","hints":["물"]}
+{"word":"가위","consonant":"ㄱㅇ","hints":["도구"]}
+{"word":"전자우편","consonant":"ㅈㅈㅇㅍ","hints":["email"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
+
+{"word":"주방","consonant":"ㅈㅂ","hints":["요리하는 공간"]}
+{"word":"국자","consonant":"ㄱㅈ","hints":["도구"]}
+{"word":"숟가락","consonant":"ㅅㄱㄹ","hints":["식기"]}
+{"word":"젓가락","consonant":"ㅈㄱㄹ","hints":["식기"]}
+{"word":"그릇","consonant":"ㄱㄹ","hints":[""]}
+{"word":"수세미","consonant":"ㅅㅅㅁ","hints":["주방", "설거지"]}
+{"word":"설거지","consonant":"ㅅㄱㅈ","hints":["먹고 난 뒤의 그릇을 씻어 정리하는 일"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
+
+{"word":"화장실","consonant":"ㅎㅈㅅ","hints":["냄새나는 곳"]}
+{"word":"시계","consonant":"ㅅㄱ","hints":["시각을 나타내는 기계"]}
+{"word":"휴지","consonant":"ㅎㅈ","hints":[""]}
+{"word":"샴푸","consonant":"ㅅㅍ","hints":[""]}
+{"word":"비누","consonant":"ㅂㄴ","hints":[""]}
+{"word":"린스","consonant":"ㄹㅅ","hints":[""]}
+{"word":"수건","consonant":"ㅅㄱ","hints":[""]}
+{"word":"팬티","consonant":"ㅍㅌ","hints":[""]}
+{"word":"바지","consonant":"ㅂㅈ","hints":[""]}
+{"word":"양말","consonant":"ㅇㅁ","hints":[""]}
+{"word":"손수건","consonant":"ㅅㅅㄱ","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
+
+{"word":"가구","consonant":"ㅎㅈ","hints":[""]}
+{"word":"의자","consonant":"ㅇㅈ","hints":["가구"]}
+{"word":"책상","consonant":"ㅊㅅ","hints":["가구"]}
+{"word":"식탁","consonant":"ㅅㅌ","hints":["가구"]}
+{"word":"소파","consonant":"ㅅㅍ","hints":["가구"]}
+{"word":"베개","consonant":"ㅂㄱ","hints":["잘 때 사용"]}
+{"word":"이불","consonant":"ㅇㅂ","hints":[""]}
+{"word":"침대","consonant":"ㅊㄷ","hints":["시몬스"]}
+{"word":"슬리퍼","consonant":"ㅅㄹㅍ","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
