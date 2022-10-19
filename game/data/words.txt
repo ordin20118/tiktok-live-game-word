@@ -6,16 +6,32 @@
 {"word":"소나무","consonant":"ㅅㄴㅁ","hints":["초록"]}
 {"word":"바다","consonant":"ㅂㄷ","hints":["파란색","육지를 제외한 부분"]}
 {"word":"바보","consonant":"ㅂㅂ","hints":["지능 부족"]}
+{"word":"구름","consonant":"ㄱㄹ","hints":["흰색"]}
+{"word":봄","consonant":"ㅂ","hints":["계절"]}
+{"word":"여름","consonant":"ㅇㄹ","hints":["계절"]}
+{"word":"가을","consonant":"ㄱㅇ","hints":["계절"]}
+{"word":"겨울","consonant":"ㄱㅇ","hints":["계절"]}
+{"word":"불","consonant":"ㅂ","hints":[""]}
+{"word":"물","consonant":"ㅁ","hints":[""]}
+{"word":"한복","consonant":"ㅎㅂ","hints":[""]}
+{"word":"공책","consonant":"ㄱㅊ","hints":["글씨를 쓰는 백지"]}
+{"word":"사탕","consonant":"ㅅㅌ","hints":["간식"]}
+{"word":"뉴스","consonant":"ㄴㅅ","hints":["새로운 소식"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 
 {"word":"고민","consonant":"ㄱㅁ","hints":[""]}
-{"word":"순서","consonant":"ㅅㅅ","hints":[""]}
+{"word":"순서","consonant":"ㅅㅅ","hints":["차례 관계"]}
 {"word":"통장","consonant":"ㅌㅈ","hints":[""]}
 {"word":"파마","consonant":"ㅍㅁ","hints":[""]}
 {"word":"토지","consonant":"ㅌㅈ","hints":["땅"]}
 {"word":"응용","consonant":"ㅇㅇ","hints":[""]}
 {"word":"헌병","consonant":"ㅎㅂ","hints":[""]}
-{"word":"소나기","consonant":"ㅅㄴㄱ","hints":[""]}
-{"word":"태풍","consonant":"ㅌㅍ","hints":[""]}
+{"word":"소나기","consonant":"ㅅㄴㄱ","hints":["짧은 비"]}
+{"word":"태풍","consonant":"ㅌㅍ","hints":["강한 바람"]}
 {"word":"바람","consonant":"ㅂㄹ","hints":[""]}
 {"word":"삼국지","consonant":"ㅅㄱㅈ","hints":[""]}
 {"word":"댄스","consonant":"ㄷㅅ","hints":["빵댕이 흔들흔들"]}
@@ -24,7 +40,7 @@
 {"word":"보답","consonant":"ㅂㄷ","hints":["은혜를 갚음"]}
 {"word":"초성퀴즈","consonant":"ㅊㅅㅋㅈ","hints":["지금 하는거"]}
 {"word":"머리띠","consonant":"ㅁㄹㄸ","hints":["머리에 하는거"]}
-{"word":"영토","consonant":"ㅇㅌ","hints":["구역"]}
+{"word":"영토","consonant":"ㅇㅌ","hints":["나라의 주권이 미치는 땅의 범위"]}
 {"word":"눈물","consonant":"ㄴㅁ","hints":["슬픔"]}
 {"word":"지폐","consonant":"ㅈㅍ","hints":["돈"]}
 {"word":"지갑","consonant":"ㅈㄱ","hints":["돈 가방"]}
@@ -61,6 +77,7 @@
 {"word":"공포","consonant":"ㄱㅍ","hints":[""]}
 {"word":"한글","consonant":"ㅎㄱ","hints":[""]}
 {"word":"학교","consonant":"ㅎㄱ","hints":[""]}
+{"word":"유치원","consonant":"ㅇㅊㅇ","hints":[""]}
 {"word":"마술","consonant":"ㅁㅅ","hints":[""]}
 {"word":"미술","consonant":"ㅁㅅ","hints":[""]}
 {"word":"변비","consonant":"ㅂㅂ","hints":[""]}
@@ -73,10 +90,43 @@
 {"word":"피신","consonant":"ㅍㅅ","hints":["몸을 숨김"]}
 {"word":"고무","consonant":"ㄱㅁ","hints":[""]}
 {"word":"가방","consonant":"ㄱㅂ","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"고무신","consonant":"ㄱㅁㅅ","hints":[""]}
+{"word":"할로윈","consonant":"ㅎㄹㅇ","hints":["10월 31일"]}
+{"word":"추석","consonant":"ㅊㅅ","hints":[""]}
+{"word":"초가집","consonant":"ㅊㄱㅈ","hints":["볏집, 밀짚으로 만든 집"]}
+{"word":"영상","consonant":"ㅇㅅ","hints":[""]}
+{"word":"동영상","consonant":"ㄷㅇㅅ","hints":[""]}
+{"word":"사진","consonant":"ㅅㅈ","hints":[""]}
+{"word":"해결","consonant":"ㅎㄱ","hints":["문제를 처리함"]}
+{"word":"탐정","consonant":"ㅌㅈ","hints":[""]}
+{"word":"형사","consonant":"ㅎㅅ","hints":["범인의 체포를 직무로 하는 사람"]}
+{"word":"경축","consonant":"ㄱㅊ","hints":["경사스러운 일을 축하함"]}
+{"word":"고충","consonant":"ㄱㅊ","hints":[""]}
+{"word":"자극","consonant":"ㅈㄱ","hints":[""]}
+{"word":"지금","consonant":"ㅈㄱ","hints":[""]}
+{"word":"요약","consonant":"ㅇㅇ","hints":["말이나 글의 요점을 간추림"]}
+{"word":"줄거리","consonant":"ㅈㄱㄹ","hints":["이야기나 이야기의 흐름"]}
+{"word":"소설","consonant":"ㅅㅅ","hints":["허구적 이야기"]}
+{"word":"심사","consonant":"ㅅㅅ","hints":[""]}
+{"word":"소식","consonant":"ㅅㅅ","hints":[""]}
+{"word":"폭탄","consonant":"ㅍㅌ","hints":["펑"]}
+{"word":"미사일","consonant":"ㅁㅅㅇ","hints":[""]}
+{"word":"선물","consonant":"ㅅㅁ","hints":[""]}
+{"word":"탱크","consonant":"ㅌㅋ","hints":[""]}
+{"word":"전투기","consonant":"ㅈㅌㄱ","hints":["군용기"]}
+{"word":"조건","consonant":"ㅈㄱ","hints":[""]}
+{"word":"요구","consonant":"ㅇㄱ","hints":["어떤 일을 청함"]}
+{"word":"다리미","consonant":"ㄷㄹㅁ","hints":[""]}
+{"word":"미용","consonant":"ㅁㅇ","hints":[""]}
+{"word":"무용","consonant":"ㅁㅇ","hints":[""]}
+{"word":"낮잠","consonant":"ㄴㅈ","hints":[""]}
+{"word":"남자","consonant":"ㄴㅈ","hints":[""]}
+{"word":"여자","consonant":"ㅇㅈ","hints":[""]}
+{"word":"띄어쓰기","consonant":"ㄸㅇㅆㄱ","hints":["글 사이 공백"]}
+{"word":"국어","consonant":"ㄱㅇ","hints":["한 나라의 국민이 쓰는 말"]}
+{"word":"사회","consonant":"ㅅㅎ","hints":["같은 무리끼리 모여 이루는 집단"]}
+{"word":"군인","consonant":"ㄱㅇ","hints":["군대에서 복무하는 사람"]}
+{"word":"직업","consonant":"ㅈㅇ","hints":["돈을 받고 하는 일"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -84,6 +134,38 @@
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
+
+
+{"word":"아시아","consonant":"ㅇㅅㅇ","hints":[""]}
+{"word":"미국","consonant":"ㅁㄱ","hints":["국가"]}
+{"word":"영국","consonant":"ㅇㄱ","hints":["국가"]}
+{"word":"중국","consonant":"ㅈㄱ","hints":["국가"]}
+{"word":"브라질","consonant":"ㅂㄹㅈ","hints":["국가"]}
+{"word":"튀르키예","consonant":"ㅌㄹㅋㅇ","hints":["국가"]}
+{"word":"베트남","consonant":"ㅂㅌㄴ","hints":["국가"]}
+{"word":"인도","consonant":"ㅇㄷ","hints":["국가"]}
+{"word":"러시아","consonant":"ㄹㅅㅇ","hints":["국가"]}
+{"word":"","consonant":"","hints":["국가"]}
+{"word":"","consonant":"","hints":["국가"]}
+{"word":"","consonant":"","hints":["국가"]}
+{"word":"","consonant":"","hints":["국가"]}
+{"word":"","consonant":"","hints":["국가"]}
+{"word":"","consonant":"","hints":["국가"]}
+{"word":"강릉","consonant":"ㄱㄹ","hints":["지역"]}
+{"word":"평택","consonant":"ㅍㅌ","hints":["지역"]}
+{"word":"부산","consonant":"ㅂㅅ","hints":["지역"]}
+{"word":"서울","consonant":"ㅅㅇ","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":["지역"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 
 {"word":"아령","consonant":"ㅇㄹ","hints":["운동 기구",""]}
 {"word":"헬스","consonant":"ㅎㅅ","hints":["운동"]}
@@ -99,14 +181,19 @@
 {"word":"펜싱","consonant":"ㅍㅅ","hints":["스포츠"]}
 {"word":"경마","consonant":"ㄱㅁ","hints":["스포츠"]}
 {"word":"등산","consonant":"ㄷㅅ","hints":["운동"]}
-{"word":"","consonant":"","hints":["운동"]}
+{"word":"덤벨","consonant":"ㄷㅂ","hints":["운동 기구"]}
 {"word":"","consonant":"","hints":["운동"]}
 {"word":"","consonant":"","hints":["운동"]}
 {"word":"","consonant":"","hints":["운동"]}
 {"word":"","consonant":"","hints":["운동"]}
 
-
-
+{"word":"요트","consonant":"ㅇㅌ","hints":[""]}
+{"word":"낙하산","consonant":"ㄴㅎㅅ","hints":[""]}
+{"word":"우산","consonant":"ㅇㅅ","hints":[""]}
+{"word":"우비","consonant":"ㅇㅂ","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 
 
 {"word":"회사","consonant":"ㅎㅅ","hints":["일 하는 곳"]}
@@ -186,10 +273,10 @@
 {"word":"그릇","consonant":"ㄱㄹ","hints":[""]}
 {"word":"수세미","consonant":"ㅅㅅㅁ","hints":["주방", "설거지"]}
 {"word":"설거지","consonant":"ㅅㄱㅈ","hints":["먹고 난 뒤의 그릇을 씻어 정리하는 일"]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"세제","consonant":"ㅅㅈ","hints":[""]}
+{"word":"면도기","consonant":"ㅁㄷㄱ","hints":["수염"]}
+{"word":"칫솔","consonant":"ㅊㅅ","hints":["치카치카"]}
+{"word":"치약","consonant":"ㅊㅇ","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -209,6 +296,10 @@
 {"word":"바지","consonant":"ㅂㅈ","hints":[""]}
 {"word":"양말","consonant":"ㅇㅁ","hints":[""]}
 {"word":"손수건","consonant":"ㅅㅅㄱ","hints":[""]}
+{"word":"안경","consonant":"ㅇㄱ","hints":["눈"]}
+{"word":"얼굴","consonant":"ㅇㄱ","hints":["니 ㅇㄱ"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -217,7 +308,7 @@
 
 
 
-{"word":"가구","consonant":"ㅎㅈ","hints":[""]}
+{"word":"가구","consonant":"ㄱㄱ","hints":[""]}
 {"word":"의자","consonant":"ㅇㅈ","hints":["가구"]}
 {"word":"책상","consonant":"ㅊㅅ","hints":["가구"]}
 {"word":"식탁","consonant":"ㅅㅌ","hints":["가구"]}

@@ -16,6 +16,10 @@
 {"word":"변요한","consonant":"ㅂㅇㅎ","hints":["연예인","미생|미스터 선샤인"]}
 {"word":"이병헌","consonant":"ㅇㅂㅎ","hints":["연예인","미스터 선샤인"]}
 {"word":"유연석","consonant":"ㅇㅇㅅ","hints":["A멘","수리남"]}
+{"word":"마동석","consonant":"ㅁㄷㅅ","hints":["영화배우",""]}
+{"word":"","consonant":"","hints":["연예인",""]}
+{"word":"","consonant":"","hints":["연예인",""]}
+{"word":"","consonant":"","hints":["연예인",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
@@ -26,6 +30,7 @@
 {"word":"","consonant":"","hints":["연예인",""]}
 
 
+{"word":"영화","consonant":"ㅇㅎ","hints":["",""]}
 {"word":"타짜","consonant":"ㅌㅉ","hints":["영화",""]}
 {"word":"극한직업","consonant":"ㄱㅎㅈㅇ","hints":["영화",""]}
 {"word":"공조","consonant":"ㄱㅈ","hints":["영화",""]}
@@ -59,6 +64,19 @@
 {"word":"","consonant":"","hints":["드라마"]}
 {"word":"","consonant":"","hints":["드라마"]}
 
+
+{"word":"바람의나라","consonant":"ㅂㄹㅇㄴㄹ","hints":["게임",""]}
+{"word":"오버워치","consonant":"ㅇㅂㅇㅊ","hints":["게임",""]}
+{"word":로스트아크","consonant":"ㄹㅅㅌㅇㅋ","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
+{"word":"","consonant":"","hints":["게임",""]}
 
 
 {"word":"우왁굳","consonant":"ㅇㅇㄱ","hints":["게임 스트리머",""]}

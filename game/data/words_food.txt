@@ -23,6 +23,8 @@
 {"word":"마늘","consonant":"ㅁㄴ","hints":["채소",""]}
 {"word":"고추","consonant":"ㄱㅊ","hints":["채소",""]}
 {"word":"오이","consonant":"ㅇㅇ","hints":["채소",""]}
+{"word":"버섯","consonant":"ㅂㅅ","hints":["그늘진 땅이나 썩은 나무에서 자람",""]}
+{"word":"양송이","consonant":"ㅇㅅㅇ","hints":["버섯류",""]}
 {"word":"","consonant":"","hints":["채소",""]}
 {"word":"","consonant":"","hints":["채소",""]}
 {"word":"","consonant":"","hints":["채소",""]}
@@ -47,10 +49,15 @@
 {"word":"자몽","consonant":"ㅈㅁ","hints":["과일",""]}
 {"word":"가지","consonant":"ㄱㅈ","hints":["채소",""]}
 {"word":"피망","consonant":"ㅍㅁ","hints":["채소",""]}
+{"word":"망고","consonant":"ㅁㄱ","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
+{"word":"","consonant":"","hints":["과일",""]}
+
+
+
 
 
 {"word":"식초","consonant":"ㅅㅊ","hints":["조미료",""]}
@@ -73,6 +80,11 @@
 {"word":"햄버거","consonant":"ㅎㅂㄱ","hints":["음식"]}
 {"word":"초코파이","consonant":"ㅊㅋㅍㅇ","hints":["과자"]}
 {"word":"빅파이","consonant":"ㅂㅍㅇ","hints":["과자"]}
+{"word":"만두","consonant":"ㅁㄷ","hints":["음식"]}
+{"word":"청국장","consonant":"ㅊㄱㅈ","hints":["음식"]}
+{"word":"스시","consonant":"ㅅㅅ","hints":["음식"]}
+{"word":"보쌈","consonant":"ㅂㅆ","hints":["음식"]}
+{"word":"","consonant":"","hints":["음식"]}
 {"word":"","consonant":"","hints":["음식"]}
 {"word":"","consonant":"","hints":["음식"]}
 {"word":"","consonant":"","hints":["음식"]}
