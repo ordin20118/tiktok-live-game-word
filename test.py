@@ -1,10 +1,14 @@
 
 import emoji
+import time
 
-test_str = "pangho🤣"
-print(test_str)
+now_time = time.time()
+print(now_time)
 
-encoded_str = test_str.encode("ascii")
-print(encoded_str)
+# test_str = "pangho🤣"
+# print(test_str)
 
-print('\U0001F63F')
+# encoded_str = test_str.encode("ascii")
+# print(encoded_str)
+
+# print('\U0001F63F')

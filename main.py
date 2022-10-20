@@ -302,11 +302,22 @@ class Game:
                         if self.last_right_user['user_id'] in self.rank:
                             update_rank = self.rank[self.last_right_user['user_id']]
                             update_rank['right_count'] += 1
+
+                            now_time = time.time()
+                            update_rank['right_update_time'] = now_time
+                            
                             self.rank[update_rank['user_id']] = update_rank
                             self.update_rank(update_rank)
                         else:
                             new_rank = self.last_right_user
                             new_rank['right_count'] = 1
+
+                            now_time = time.time()
+                            print(now_time)
+
+                            now_time = time.time()
+                            new_rank['right_update_time'] = now_time
+
                             self.rank[new_rank['user_id']] = new_rank
                             self.update_rank(new_rank)
 
@@ -741,12 +752,12 @@ class Game:
                     if diamondCnt >= 100:
                         # 패스
                         self.now_hint_idx += 1
-                        print("[now hit idx]:%d"%self.now_hint_idx)
+                        print("[now hint idx]:%d"%self.now_hint_idx)
                         
                     elif diamondCnt >= 1 and diamondCnt < 100:
                         # 힌트
                         self.now_hint_idx += 1
-                        print("[now hit idx]:%d"%self.now_hint_idx)
+                        print("[now hint idx]:%d"%self.now_hint_idx)
                         
                    
             elif msg_obj['code'] == MSG_CODE_SHARE:
@@ -755,6 +766,14 @@ class Game:
             elif msg_obj['code'] == MSG_CODE_QUIT:
                 #await event_queue.put(pygame.event.Q)
                 pass
+            elif msg_obj['code'] == MSG_CODE_NOTICE:
+                print(msg_obj)
+                self.npc_dog.state = int(msg_obj['motion_code'])
+                self.npc_dog.chat = msg_obj['msg']
+                self.npc_dog.now_movement = (int(msg_obj['movement']), 0)
+                self.npc_dog.direction = msg_obj['direction']
+                self.npc_dog.motion_time = int(msg_obj['motion_time'])
+                
 
     async def send_word_to_server(self):
         # send message for http
@@ -765,7 +784,7 @@ class Game:
             if self.send_word != None:
                 URL = "http://localhost:30001/set_word?word=%s"%self.send_word
                 response = requests.get(URL)
-                print("[SEND WORD TO SERVER][%s] - [%s]" % (response.status_code, response.text))    
+                #print("[SEND WORD TO SERVER][%s] - [%s]" % (response.status_code, response.text))    
                 self.send_word = None
                 
 
@@ -801,8 +820,9 @@ class Game:
 
 
     def update_rank(self, user):
-        # 랭킹 체크
         print("[update_rank]")
+        print(user)
+        # 랭킹 체크        
         for idx, rank in enumerate(self.top_ranks):
             if rank['user_id'] == user['user_id']:
                 self.top_ranks[idx] = user
@@ -815,12 +835,11 @@ class Game:
         self.print_rank()
             
         
-    def sort_rank(self):
-        self.top_ranks.sort(key = lambda object : object['right_count'], reverse=True)
+    def sort_rank(self):        
+        self.top_ranks.sort(key = lambda object : (object['right_count'], object['right_update_time']), reverse=True)
+
         if len(self.top_ranks) > 10:
             self.top_ranks = self.top_ranks[0:10]
-
-
 
     def print_rank(self):
         print("[[ RANK ]] ====================")
@@ -966,7 +985,6 @@ class Game:
                     self.last_right_user = self.right_user_queue[0]                                     
                     del self.right_user_queue[0]                 
                     self.right_user_queue.clear()
-                    print("[right_user_queue len]: %d" % len(self.right_user_queue))
                     self.state = GAME_STATE_OVER 
                 except Exception as e:
                     print("[print user error]:%s" % e)

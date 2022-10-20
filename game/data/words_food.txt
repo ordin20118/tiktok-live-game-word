@@ -10,7 +10,7 @@
 {"word":"카페인","consonant":"ㅋㅍㅇ","hints":[""]}
 
 
-{"word":"채소","consonant":"ㅎㅂ","hints":["밭에서 기르는 농작물",""]}
+{"word":"채소","consonant":"ㅊㅅ","hints":["밭에서 기르는 농작물",""]}
 {"word":"김치","consonant":"ㄱㅊ","hints":["음식",""]}
 {"word":"양파","consonant":"ㅇㅍ","hints":["채소",""]}
 {"word":"감자","consonant":"ㄱㅈ","hints":["채소",""]}

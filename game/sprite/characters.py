@@ -1,3 +1,4 @@
+from game.code import SCREEN_WIDTH
 import pygame
 
 # 기본 오브젝트 클래스
@@ -20,6 +21,12 @@ class BaseObject:
         dx, dy = self.now_movement
         self.rect.x += dx
         self.rect.y += dy
+        if self.rect.x <= -30:
+            self.direction = 'right'
+            self.now_movement = (-self.now_movement[0],0)            
+        elif self.rect.x >= SCREEN_WIDTH - 100:
+            self.direction = 'left'
+            self.now_movement = (-self.now_movement[0],0)
 
     def update(self, mt, game):
         pass
@@ -66,6 +73,7 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
         self.movement = movement
         self.now_movement = movement
         self.motion_time = 0            # 특정 이벤트에 의해 state, movement가 설정되고 해당 애니메이션을 보이는 시간
+        self.now_motion_time = 0
         self.group = group
         self.type = 1
         self.chat = None                # 관리자 채팅        
@@ -104,7 +112,7 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
         #self.animation_time = round(100 / len(self.images * 100), 2)
         img_len = self.img_index_end - self.img_index_start + 1
         self.animation_time = round(100 / (img_len * 150), 2)
-        self.chat_animation_time = 3
+        self.chat_animation_time = 4
         self.chat_animation_now = 0
 
         # mt와 결합하여 animation_time을 계산할 시간 초기화
@@ -139,6 +147,9 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
             self.img_index_start = base_idx + 47
             self.img_index_end = base_idx + 56
 
+        if self.img_index < self.img_index_start or self.img_index > self.img_index_end:
+            self.img_index = self.img_index_start
+
         # loop 시간 더하기
         self.current_time += mt
 
@@ -147,12 +158,22 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
             self.current_time = 0
         
             self.img_index += 1
-            if self.img_index >= self.img_index_end:
-                self.img_index = self.img_index_start               
-
+            if self.img_index > self.img_index_end:
+                self.img_index = self.img_index_start
+            #print("start:[%d]/end:[%d]"%(self.img_index_start, self.img_index_end))               
+            #print("[Now Dog Image IDx]:%d"%self.img_index)
             self.image = self.images[self.img_index]
             #print("%d[Now Dog Image Number]:%d"%(len(self.images), self.img_index))
+        
+        self.check_motion_time(mt)
 
+    def check_motion_time(self, mt):
+        self.now_motion_time += mt
+        if self.now_motion_time >= self.motion_time:
+            self.now_movement = (0, 0)
+            self.state = 0
+            self.motion_time = 0
+            self.now_motion_time = 0
 
     def draw(self, mt):
         # 채팅 출력
