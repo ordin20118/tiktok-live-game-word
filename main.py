@@ -12,6 +12,7 @@ import sys
 import websockets
 from game.dataload import *
 from game.sprite import ui
+from game.sprite import characters
 from game.code import *
 from urllib.request import urlopen
 from PIL import Image, ImageDraw
@@ -101,11 +102,13 @@ class Game:
         self.tile_size = (50, 50)
         self.donation_size = (SCREEN_WIDTH / 7, SCREEN_WIDTH / 7)
         self.right_profile_size = (SCREEN_WIDTH / 6, SCREEN_WIDTH / 6)
-        self.npc_size = (60, 60)
+        self.npc_dog_size = (130, 130)
 
 
         # 리소스 불러오기
+        import_dog_images(self.npc_dog_size)
         
+        print("[dog_images size]:%d"%len(dog_images))
 
         # 효과음 로드
         self.sound_map = import_sound()
@@ -125,6 +128,12 @@ class Game:
         self.consonant = ['ㄱ','ㄴ','ㄷ','ㄹ','ㅁ','ㅂ','ㅅ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ']
         self.random_consonant = None
         
+        # npc 초기화        
+        self.npc_dog = characters.DogSprite(size=self.npc_dog_size, position=RIGHT_SPAWN_POSITION, direction='left', movement=(0,0), state=0, group='npc', 
+                                            hp=100, power=1, name='PangDog', profile=None, images=dog_images, game=self)        
+        self.sprite_group.add(self.npc_dog)
+        
+
         self.coin_map = {}
         self.like_map = {}
         self.share_map = {}
@@ -193,11 +202,13 @@ class Game:
             line = line.replace("\n", "")   
             if line == None or line == "":
                 continue        
-            obj = json.loads(line)            
+            obj = json.loads(line)     
+                   
             if obj['word'] == "" or obj['consonant'] == "":
                 continue
-            #print("[[ DATA LOAD ]] word:[%s]"%obj)
+            
             self.candidates.append(obj)
+            #print("[LOADED DATA COUNT]:%d"%count)
             count += 1
         print("[[ Complete load words data. ]]: %d" % count)    
         f.close()
@@ -254,7 +265,7 @@ class Game:
                 # 모든 처리가 완료되면 game state START로 변경
                 if self.is_set_tiles and self.is_set_candidate:
                     #self.state = GAME_STATE_START
-                    self.draw_ready = True                    
+                    self.draw_ready = True               
                     
 
             
@@ -322,13 +333,10 @@ class Game:
                     self.state = GAME_STATE_READY
                     print("[[ Complete Game Over Process ]]")
 
-                
-
-                
 
             # <화면 그리기>
             # 모든 Sprite update
-            self.sprite_group.update(mt, self)
+            self.sprite_group.update(mt, self)         
             
             # 배경색
             self.SCREEN.fill(self.COLOR_BLUE) 
@@ -429,10 +437,6 @@ class Game:
                 rank_y += rank_text_rect.size[1] + (SCREEN_HEIGHT * 0.01)
 
 
-             
-            
-
-
 
             # ================================== READY ==================================
             if self.state == GAME_STATE_READY and self.draw_ready == True:
@@ -455,7 +459,6 @@ class Game:
                 #self.random_consonant
                 if self.ready_animation_term >= 100:
                     self.random_consonant = ""
-                    #print("hhh~!")
                     self.ready_animation_term = 0
                     # TODO: random
                     #tmp_arr = list(range(len(self.candidates)))
@@ -464,12 +467,15 @@ class Game:
                         self.random_consonant += self.consonant[rand_idx]
                                     
                 self.print_random_word()
-                
+
                 if int(animation_time) == 2:
                     self.ready_animation_time = 0
+                    #print("[[ ReSet Reday Animation Time 0 ]]")
                     self.state = GAME_STATE_START
+                    #print("[[ Set State Start ]]")
                     #self.is_end_ready_animation = False
                     self.draw_ready = False
+                    print("[[ Complete Ready Process ]]")
 
 
             if self.state == GAME_STATE_OVER and self.draw_result == True:
@@ -561,17 +567,18 @@ class Game:
                     self.draw_result = False
                 
             # 객체별로 필요한 백그라운드 그려주기
-            for sprite in self.sprite_group:
-                sprite.draw_back()   
+            # for sprite in self.sprite_group:
+            #     sprite.draw_back()   
 
             # 모든 sprite 화면에 그려주기
-            self.sprite_group.draw(self.SCREEN)      
+            self.sprite_group.draw(self.SCREEN)   
 
             # 객체별로 필요한 그림 그려주기
             for sprite in self.sprite_group:
-                sprite.draw()        
-            
+                sprite.draw(mt)        
+
             pygame.display.update()            
+
 
     async def game_event_loop(self, event_queue):        
         current_time = 0
@@ -758,7 +765,7 @@ class Game:
             if self.send_word != None:
                 URL = "http://localhost:30001/set_word?word=%s"%self.send_word
                 response = requests.get(URL)
-                #print("[%s] - [%s]" % (response.status_code, response.text))    
+                print("[SEND WORD TO SERVER][%s] - [%s]" % (response.status_code, response.text))    
                 self.send_word = None
                 
 
@@ -774,13 +781,13 @@ class Game:
         donation_task = asyncio.ensure_future(self.print_donation())
         send_word_task = asyncio.ensure_future(self.send_word_to_server())
         
-                
         try:
             loop.run_forever()
         except KeyboardInterrupt:
             pass
         except Exception as e:
             print(e)
+            print(e.args)
             #raise e
         finally:
             pygame_task.cancel()

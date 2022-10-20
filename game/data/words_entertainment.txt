@@ -67,7 +67,7 @@
 
 {"word":"바람의나라","consonant":"ㅂㄹㅇㄴㄹ","hints":["게임",""]}
 {"word":"오버워치","consonant":"ㅇㅂㅇㅊ","hints":["게임",""]}
-{"word":로스트아크","consonant":"ㄹㅅㅌㅇㅋ","hints":["게임",""]}
+{"word":"로스트아크","consonant":"ㄹㅅㅌㅇㅋ","hints":["게임",""]}
 {"word":"","consonant":"","hints":["게임",""]}
 {"word":"","consonant":"","hints":["게임",""]}
 {"word":"","consonant":"","hints":["게임",""]}

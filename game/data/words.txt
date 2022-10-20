@@ -7,7 +7,7 @@
 {"word":"바다","consonant":"ㅂㄷ","hints":["파란색","육지를 제외한 부분"]}
 {"word":"바보","consonant":"ㅂㅂ","hints":["지능 부족"]}
 {"word":"구름","consonant":"ㄱㄹ","hints":["흰색"]}
-{"word":봄","consonant":"ㅂ","hints":["계절"]}
+{"word":"봄","consonant":"ㅂ","hints":["계절"]}
 {"word":"여름","consonant":"ㅇㄹ","hints":["계절"]}
 {"word":"가을","consonant":"ㄱㅇ","hints":["계절"]}
 {"word":"겨울","consonant":"ㄱㅇ","hints":["계절"]}
