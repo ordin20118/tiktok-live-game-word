@@ -544,18 +544,19 @@ class Game:
                 # coin 후원 받으면 힌트 출력
                 # <힌트 있음> 아래에 힌트1. ㅁㅁㅁㅁㅁ 힌트2. ㅁㅁㅁㅁ 이런 형식으로 출력
 
-
-                hint_cnt_text = self.main_font_13.render('<남은 힌트: %d>'%self.now_hint_count, True, self.COLOR_GREY_LIGHT)
-                hint_cnt_text_rect = hint_cnt_text.get_rect()
-                hint_cnt_text_rect.centerx = int(SCREEN_WIDTH * 0.5)
-                self.SCREEN.blit(hint_cnt_text, (hint_cnt_text_rect.x, SCREEN_HEIGHT * 0.36))
-
                 for idx, hint in enumerate(self.now_word['hints']):
                     if idx <= self.now_hint_idx and hint != "" and len(hint) > 0:
                         hint_text = self.main_font_15.render('힌트%d: %s'%(idx+1, hint), True, self.COLOR_GREY_LIGHT)
                         hint_text_rect = hint_text.get_rect()
                         hint_text_rect.centerx = int(SCREEN_WIDTH * 0.5)
                         self.SCREEN.blit(hint_text, (hint_text_rect.x, self.hint_height + (SCREEN_HEIGHT * 0.02 * idx)))
+                        
+
+                self.now_hint_count = self.max_hint_count - (self.now_hint_idx + 1)
+                hint_cnt_text = self.main_font_13.render('<남은 힌트: %d>'%self.now_hint_count, True, self.COLOR_GREY_LIGHT)
+                hint_cnt_text_rect = hint_cnt_text.get_rect()
+                hint_cnt_text_rect.centerx = int(SCREEN_WIDTH * 0.5)
+                self.SCREEN.blit(hint_cnt_text, (hint_cnt_text_rect.x, SCREEN_HEIGHT * 0.36))
                 
                 
                 self.print_word_ui()
@@ -727,6 +728,11 @@ class Game:
                     self.right_user_queue.append(msg_obj)
                     #self.state = GAME_STATE_OVER
                     self.over_animation_time = pygame.time.get_ticks()
+                    
+                    self.npc_dog.chat = "%s님이 정답을 맞혔어요!"%msg_obj['nickname']
+                    self.npc_dog.state = int(NPC_DOG_STATE_JUMP)
+                    self.npc_dog.now_movement = (0, 0)
+                    self.npc_dog.motion_time = 3
 
             elif msg_obj['code'] == MSG_CODE_LIKE and self.state == GAME_STATE_PLAYING:
                 print("[%s] likes count: %d" %(msg_obj['nickname'], msg_obj['like_count']))
@@ -739,11 +745,12 @@ class Game:
                 # 1 <= donation <= 99   => 힌트
                 # 100 <= donation       => 패스
 
-                # TODO: 사용자의 user_id로 도네이션 총액 저장
-                user_id = msg_obj['user_id']
-
                 # must - 도네이션 애니메이션만 출력
                 self.donation_queue.append(msg_obj)
+
+                self.npc_dog.state = int(NPC_DOG_STATE_JUMP)
+                self.npc_dog.now_movement = (0, 0)
+                self.npc_dog.motion_time = 3
 
                 # 플레이 상태라면
                 if self.state == GAME_STATE_PLAYING:
@@ -751,13 +758,15 @@ class Game:
                     diamondCnt = msg_obj['coin']
                     if diamondCnt >= 100:
                         # 패스
-                        self.now_hint_idx += 1
-                        print("[now hint idx]:%d"%self.now_hint_idx)
+                        if self.max_hint_count > (self.now_hint_idx + 1):
+                            self.now_hint_idx += 1
+                            print("[now hint idx]:%d"%self.now_hint_idx)
                         
                     elif diamondCnt >= 1 and diamondCnt < 100:
                         # 힌트
-                        self.now_hint_idx += 1
-                        print("[now hint idx]:%d"%self.now_hint_idx)
+                        if self.max_hint_count > (self.now_hint_idx + 1):
+                            self.now_hint_idx += 1
+                            print("[now hint idx]:%d"%self.now_hint_idx)
                         
                    
             elif msg_obj['code'] == MSG_CODE_SHARE:
@@ -769,7 +778,8 @@ class Game:
             elif msg_obj['code'] == MSG_CODE_NOTICE:
                 print(msg_obj)
                 self.npc_dog.state = int(msg_obj['motion_code'])
-                self.npc_dog.chat = msg_obj['msg']
+                if msg_obj['msg'] != None and len(msg_obj['msg']) > 0:
+                    self.npc_dog.chat = msg_obj['msg']                
                 self.npc_dog.now_movement = (int(msg_obj['movement']), 0)
                 self.npc_dog.direction = msg_obj['direction']
                 self.npc_dog.motion_time = int(msg_obj['motion_time'])
@@ -879,25 +889,29 @@ class Game:
                     if is_file:
                         image = pygame.transform.scale(pygame.image.load(cache_path), self.donation_size)
                     else:
-                        image_str = urlopen(donation_obj['profile_img']).read()
-                        # use PIL
-                        pil_img = Image.open(io.BytesIO(image_str))
-                        
-                        height,width = pil_img.size
-                        lum_img = Image.new('L', [height,width] , 0)
-                        
-                        draw = ImageDraw.Draw(lum_img)
-                        draw.pieslice([(0,0), (height,width)], 0, 360, 
-                                    fill = 255, outline = "white")
-                        img_arr =np.array(pil_img)
-                        lum_img_arr =np.array(lum_img)                    
-                        final_img_arr = np.dstack((img_arr,lum_img_arr))                        
 
-                        final_pil_img = Image.fromarray(final_img_arr)
+                        try:
+                            image_str = urlopen(donation_obj['profile_img']).read()
+                            # use PIL
+                            pil_img = Image.open(io.BytesIO(image_str))
+                            
+                            height,width = pil_img.size
+                            lum_img = Image.new('L', [height,width] , 0)
+                            
+                            draw = ImageDraw.Draw(lum_img)
+                            draw.pieslice([(0,0), (height,width)], 0, 360, 
+                                        fill = 255, outline = "white")
+                            img_arr =np.array(pil_img)
+                            lum_img_arr =np.array(lum_img)                    
+                            final_img_arr = np.dstack((img_arr,lum_img_arr))                        
 
-                        # 캐시 파일 저장
-                        final_pil_img.save(cache_path, 'png')
-                        image = pygame.transform.scale(pygame.image.load(cache_path), self.donation_size)
+                            final_pil_img = Image.fromarray(final_img_arr)
+
+                            # 캐시 파일 저장
+                            final_pil_img.save(cache_path, 'png')
+                            image = pygame.transform.scale(pygame.image.load(cache_path), self.donation_size)
+                        except:
+                            image = pygame.transform.scale(pygame.image.load('game/res/cache/profile/default.png'), self.right_profile_size)
 
                     tmps = []
                     tmps.append(image)                    
@@ -972,7 +986,6 @@ class Game:
                             image = pygame.transform.scale(pygame.image.load(cache_path), self.right_profile_size)
                         except:
                             image = pygame.transform.scale(pygame.image.load('game/res/cache/profile/default.png'), self.right_profile_size)
-                            pass
 
                     print("[Getted cropped image]")
 

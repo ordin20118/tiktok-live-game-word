@@ -17,8 +17,8 @@
 {"word":"이병헌","consonant":"ㅇㅂㅎ","hints":["연예인","미스터 선샤인"]}
 {"word":"유연석","consonant":"ㅇㅇㅅ","hints":["A멘","수리남"]}
 {"word":"마동석","consonant":"ㅁㄷㅅ","hints":["영화배우",""]}
-{"word":"","consonant":"","hints":["연예인",""]}
-{"word":"","consonant":"","hints":["연예인",""]}
+{"word":"원빈","consonant":"ㅇㅂ","hints":["연예인",""]}
+{"word":"신세경","consonant":"ㅅㅅㄱ","hints":["영화배우",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
@@ -39,9 +39,9 @@
 {"word":"호빗","consonant":"ㅎㅂ","hints":["영화",""]}
 {"word":"해리포터","consonant":"ㅎㄹㅍㅌ","hints":["영화",""]}
 {"word":"괴물","consonant":"ㄱㅁ","hints":["영화",""]}
+{"word":"어벤져스","consonant":"ㅇㅂㅈㅅ","hints":["영화",""]}
 {"word":"","consonant":"","hints":["영화",""]}
 {"word":"","consonant":"","hints":["영화",""]}
-{"word":"","consonant":"","hints":["영화",""]}
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
@@ -49,6 +49,18 @@
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
+
+
+{"word":"메시","consonant":"ㅁㅅ","hints":["축구"]}
+{"word":"호날두","consonant":"ㅎㄴㄷ","hints":["축구", "날강두"]}
+{"word":"","consonant":"","hints":["축구"]}
+{"word":"","consonant":"","hints":["축구"]}
+{"word":"","consonant":"","hints":["축구"]}
+{"word":"","consonant":"","hints":["축구"]}
+{"word":"","consonant":"","hints":["축구"]}
+{"word":"","consonant":"","hints":["축구"]}
+{"word":"","consonant":"","hints":["축구"]}
+{"word":"","consonant":"","hints":["축구"]}
 
 
 {"word":"수리남","consonant":"ㅅㄹㄴ","hints":["드라마","국가"]}

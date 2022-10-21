@@ -44,8 +44,23 @@
 {"word":"조개","consonant":"ㅈㄱ","hints":["동물",""]}
 {"word":"사슴","consonant":"ㅅㅅ","hints":["동물",""]}
 {"word":"노루","consonant":"ㄴㄹ","hints":["동물",""]}
-{"word":"거미","consonant":"ㄱㅁ","hints":["곤충",""]}
-{"word":"개미","consonant":"ㄱㅁ","hints":["곤충",""]}
+{"word":"여우","consonant":"ㅇㅇ","hints":["동물",""]}
+{"word":"늑대","consonant":"ㄴㄷ","hints":["동물",""]}
+{"word":"캥거루","consonant":"ㅋㄱㄹ","hints":["동물",""]}
+{"word":"비버","consonant":"ㅂㅂ","hints":["동물",""]}
+{"word":"수달","consonant":"ㅅㄷ","hints":["동물",""]}
+{"word":"족제비","consonant":"ㅈㅈㅂ","hints":["동물",""]}
+{"word":"오소리","consonant":"ㅇㅅㄹ","hints":["동물",""]}
+{"word":"뱀","consonant":"ㅂ","hints":["동물","다리가 없음"]}
+{"word":"문어","consonant":"ㅁㅇ","hints":["동물","연체동물"]}
+{"word":"낙지","consonant":"ㄴㅈ","hints":["동물","연체동물"]}
+{"word":"장어","consonant":"ㅈㅇ","hints":["동물","민물고기"]}
+{"word":"미꾸라지","consonant":"ㅁㄲㄹㅈ","hints":["어류",""]}
+{"word":"참다랑어","consonant":"ㅊㄷㄹㅇ","hints":["동물","참치"]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
+{"word":"","consonant":"","hints":["동물",""]}
 {"word":"","consonant":"","hints":["동물",""]}
 {"word":"","consonant":"","hints":["동물",""]}
 
@@ -53,7 +68,7 @@
 {"word":"개미","consonant":"ㄱㅁ","hints":["곤충",""]}
 {"word":"메뚜기","consonant":"ㅁㄸㄱ","hints":["곤충",""]}
 {"word":"귀뚜라미","consonant":"ㄱㄸㄹㅁ","hints":["곤충",""]}
-{"word":"","consonant":"","hints":["곤충",""]}
+{"word":"지렁이","consonant":"ㅈㄹㅇ","hints":["징그러움","자웅동체"]}
 {"word":"","consonant":"","hints":["곤충",""]}
 {"word":"","consonant":"","hints":["곤충",""]}
 {"word":"","consonant":"","hints":["곤충",""]}

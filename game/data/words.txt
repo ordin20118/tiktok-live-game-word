@@ -17,9 +17,16 @@
 {"word":"공책","consonant":"ㄱㅊ","hints":["글씨를 쓰는 백지"]}
 {"word":"사탕","consonant":"ㅅㅌ","hints":["간식"]}
 {"word":"뉴스","consonant":"ㄴㅅ","hints":["새로운 소식"]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"전개","consonant":"ㅈㄱ","hints":["내용을 진전시켜 펴 나감"]}
+{"word":"나이테","consonant":"ㄴㅇㅌ","hints":["나무의 나이"]}
+{"word":"크리에이터","consonant":"ㅋㄹㅇㅇㅌ","hints":["틱톡커","유튜버"]}
+{"word":"색종이","consonant":"ㅅㅈㅇ","hints":["알록달록"]}
+{"word":"풍선","consonant":"ㅍㅅ","hints":["고무주머니"]}
+{"word":"꼰대","consonant":"ㄲㄷ","hints":["늙은이"]}
+{"word":"곰방대","consonant":"ㄱㅂㄷ","hints":["담뱃대"]}
+{"word":"공유","consonant":"ㄱㅇ","hints":["함께 소유함"]}
+{"word":"구구단","consonant":"ㄱㄱㄷ","hints":["5X6","9X9"]}
+{"word":"보상","consonant":"ㅂㅅ","hints":["손해를 갚음"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
@@ -127,8 +134,34 @@
 {"word":"사회","consonant":"ㅅㅎ","hints":["같은 무리끼리 모여 이루는 집단"]}
 {"word":"군인","consonant":"ㄱㅇ","hints":["군대에서 복무하는 사람"]}
 {"word":"직업","consonant":"ㅈㅇ","hints":["돈을 받고 하는 일"]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"존경","consonant":"ㅈㄱ","hints":["남의 인격 사상 등을 공경함"]}
+{"word":"경치","consonant":"ㄱㅊ","hints":["자연이나 지역의 모습"]}
+{"word":"고찰","consonant":"ㄱㅊ","hints":["깊이 생각하고 연구함"]}
+{"word":"주식","consonant":"ㅈㅅ","hints":[""]}
+{"word":"연구실","consonant":"ㅇㄱㅅ","hints":[""]}
+{"word":"실험실","consonant":"ㅅㅎㅅ","hints":[""]}
+{"word":"도파민","consonant":"ㄷㅍㅁ","hints":["흥분", "신경 전달 물질"]}
+{"word":"보육원","consonant":"ㅂㅇㅇ","hints":["보호자가 없는 아이들을 기르고 가르치는 곳"]}
+{"word":"우유부단","consonant":"ㅇㅇㅂㄷ","hints":["망설이며 결단력이 없음"]}
+{"word":"주부","consonant":"ㅈㅂ","hints":["가정의 살림살이를 맡아 꾸려 가는 안주인"]}
+{"word":"고무장갑","consonant":"ㄱㅁㅈㄱ","hints":["고무"]}
+{"word":"앙금","consonant":"ㅇㄱ","hints":["마음속에 남아 있는 개운치 않은 감정"]}
+{"word":"취업","consonant":"ㅊㅇ","hints":["직업을 잡아 직장에 나감"]}
+{"word":"사전","consonant":"ㅅㅈ","hints":["영어ㅅㅈ"]}
+{"word":"해외","consonant":"ㅎㅇ","hints":[""]}
+{"word":"파병","consonant":"ㅍㅂ","hints":["군대를 파견함"]}
+{"word":"반성","consonant":"ㅂㅅ","hints":["뉘우침"]}
+{"word":"놀이터","consonant":"ㄴㅇㅌ","hints":["아이들이 노는 곳"]}
+{"word":"모래","consonant":"ㅁㄹ","hints":["ㅁㄹ사장"]}
+{"word":"끝말잇기","consonant":"ㄲㅁㅇㅅ","hints":["낱말 놀이", "끝음절을 첫음절로 이음"]}
+{"word":"윷놀이","consonant":"ㅇㄴㅇ","hints":["민속놀이"]}
+{"word":"에버랜드","consonant":"ㅇㅂㄹㄷ","hints":["테마파크"]}
+{"word":"롯데월드","consonant":"ㄹㄷㅇㄷ","hints":["테마파크"]}
+{"word":"가족","consonant":"ㄱㅈ","hints":["엄마,아빠,형제"]}
+{"word":"할머니","consonant":"ㅎㅁㄴ","hints":["부모의 어머니"]}
+{"word":"포기","consonant":"ㅍㄱ","hints":["그만둠"]}
+{"word":"갯벌","consonant":"갯벌","hints":["밀물에 잠기고 썰물에 드러나는 땅"]}
+{"word":"자웅동체","consonant":"ㅈㅇㄷㅊ","hints":["지렁이","암수한몸"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -136,6 +169,7 @@
 
 
 
+{"word":"국가","consonant":"ㄱㄱ","hints":["나라"]}
 {"word":"아시아","consonant":"ㅇㅅㅇ","hints":[""]}
 {"word":"미국","consonant":"ㅁㄱ","hints":["국가"]}
 {"word":"영국","consonant":"ㅇㄱ","hints":["국가"]}
@@ -145,8 +179,20 @@
 {"word":"베트남","consonant":"ㅂㅌㄴ","hints":["국가"]}
 {"word":"인도","consonant":"ㅇㄷ","hints":["국가"]}
 {"word":"러시아","consonant":"ㄹㅅㅇ","hints":["국가"]}
-{"word":"","consonant":"","hints":["국가"]}
-{"word":"","consonant":"","hints":["국가"]}
+{"word":"프랑스","consonant":"ㅍㄹㅅ","hints":["국가"]}
+{"word":"이탈리아","consonant":"ㅇㅌㄹㅇ","hints":["국가"]}
+{"word":"스페인","consonant":"ㅅㅍㅇ","hints":["국가"]}
+{"word":"독일","consonant":"ㄷㅇ","hints":["국가"]}
+{"word":"폴란드","consonant":"ㅍㄹㄷ","hints":["국가"]}
+{"word":"우크라이나","consonant":"ㅇㅋㄹㅇㄴ","hints":["국가"]}
+{"word":"불가리아","consonant":"ㅂㄱㄹㅇ","hints":["국가"]}
+{"word":"포르투갈","consonant":"ㅍㄹㅌㄱ","hints":["국가"]}
+{"word":"카자흐스탄","consonant":"ㅋㅈㅎㅅㅌ","hints":["국가"]}
+{"word":"스위스","consonant":"ㅅㅇㅅ","hints":["국가"]}
+{"word":"아일랜드","consonant":"ㅇㅇㄹㄷ","hints":["국가"]}
+{"word":"핀란드","consonant":"ㅍㄹㄷ","hints":["국가"]}
+{"word":"스웨덴","consonant":"ㅅㅇㄷ","hints":["국가"]}
+{"word":"일본","consonant":"ㅇㅂ","hints":["국가"]}
 {"word":"","consonant":"","hints":["국가"]}
 {"word":"","consonant":"","hints":["국가"]}
 {"word":"","consonant":"","hints":["국가"]}
@@ -155,11 +201,11 @@
 {"word":"평택","consonant":"ㅍㅌ","hints":["지역"]}
 {"word":"부산","consonant":"ㅂㅅ","hints":["지역"]}
 {"word":"서울","consonant":"ㅅㅇ","hints":["지역"]}
-{"word":"","consonant":"","hints":["지역"]}
-{"word":"","consonant":"","hints":["지역"]}
-{"word":"","consonant":"","hints":["지역"]}
-{"word":"","consonant":"","hints":["지역"]}
-{"word":"","consonant":"","hints":["지역"]}
+{"word":"인천","consonant":"ㅇㅊ","hints":["지역"]}
+{"word":"전주","consonant":"ㅈㅈ","hints":["지역"]}
+{"word":"포항","consonant":"ㅍㅎ","hints":["지역"]}
+{"word":"김해","consonant":"ㄱㅎ","hints":["지역", "공항"]}
+{"word":"창원","consonant":"ㅊㅇ","hints":["지역"]}
 {"word":"","consonant":"","hints":["지역"]}
 {"word":"","consonant":"","hints":["지역"]}
 {"word":"","consonant":"","hints":["지역"]}
@@ -169,7 +215,7 @@
 
 {"word":"아령","consonant":"ㅇㄹ","hints":["운동 기구",""]}
 {"word":"헬스","consonant":"ㅎㅅ","hints":["운동"]}
-{"word":"운동","consonant":"ㅎㅅ","hints":[""]}
+{"word":"운동","consonant":"ㅇㄷ","hints":[""]}
 {"word":"근육","consonant":"ㄱㅇ","hints":["운동"]}
 {"word":"테니스","consonant":"ㅌㄴㅅ","hints":["스포츠"]}
 {"word":"축구","consonant":"ㅊㄱ","hints":["스포츠"]}
@@ -182,8 +228,8 @@
 {"word":"경마","consonant":"ㄱㅁ","hints":["스포츠"]}
 {"word":"등산","consonant":"ㄷㅅ","hints":["운동"]}
 {"word":"덤벨","consonant":"ㄷㅂ","hints":["운동 기구"]}
-{"word":"","consonant":"","hints":["운동"]}
-{"word":"","consonant":"","hints":["운동"]}
+{"word":"요가","consonant":"ㅇㄱ","hints":["운동"]}
+{"word":"명상","consonant":"ㅁㅅ","hints":["눈 감고 깊이 생각함"]}
 {"word":"","consonant":"","hints":["운동"]}
 {"word":"","consonant":"","hints":["운동"]}
 
@@ -204,8 +250,8 @@
 {"word":"입사","consonant":"ㅇㅅ","hints":["회사"]}
 {"word":"출근","consonant":"ㅊㄱ","hints":["회사"]}
 {"word":"퇴근","consonant":"ㅌㄱ","hints":["회사"]}
-{"word":"","consonant":"","hints":["회사"]}
-{"word":"","consonant":"","hints":["회사"]}
+{"word":"출장","consonant":"ㅊㅈ","hints":["회사"]}
+{"word":"은퇴","consonant":"ㅇㅌ","hints":["직임에서 물러남"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -242,12 +288,96 @@
 {"word":"난로","consonant":"ㄴㄹ","hints":["따끈따끈"]}
 {"word":"세탁기","consonant":"ㅅㅌㄱ","hints":["빨래"]}
 {"word":"시장","consonant":"ㅅㅈ","hints":[""]}
+{"word":"인쇄기","consonant":"ㅇㅅㄱ","hints":["종이와 잉크"]}
+{"word":"주식","consonant":"ㅈㅅ","hints":["내가 사면 떨어지는거"]}
+{"word":"금융","consonant":"ㄱㅇ","hints":["금전을 융통하는 일"]}
+{"word":"투자","consonant":"ㅌㅈ","hints":["사업에 자본을 대는 일"]}
+{"word":"후원","consonant":"ㅎㅇ","hints":["뒤에서 도와줌"]}
+{"word":"수정","consonant":"ㅅㅈ","hints":["고치어 정돈함"]}
+{"word":"다이아몬드","consonant":"ㄷㅇㅇㅁㄷ","hints":["보석"]}
+{"word":"보석","consonant":"ㅂㅅ","hints":["광물"]}
+{"word":"대출","consonant":"ㄷㅊ","hints":["돈을 빌려주거나 빌림"]}
+{"word":"전문가","consonant":"ㅈㅁㄱ","hints":["특정 분야에 지식과 경험을 가진 사람"]}
+{"word":"학원","consonant":"ㅎㅇ","hints":["교육 기관"]}
+{"word":"수능","consonant":"ㅅㄴ","hints":["대학 수학 능력 시험"]}
+{"word":"영양소","consonant":"ㅇㅇㅅ","hints":["영양분이 있는 물질"]}
+{"word":"음악","consonant":"ㅇㅇ","hints":["목소리나 악기로 감정을 나타내는 예술"]}
+{"word":"악기","consonant":"ㅇㄱ","hints":["음악"]}
+{"word":"뮤지컬","consonant":"","hints":["현대 음악극의 한 형식"]}
+{"word":"오페라","consonant":"","hints":["음악 중심의 종합 무대 예술"]}
+{"word":"가요","consonant":"","hints":["대중이 즐겨 부르는 노래"]}
+{"word":"공연","consonant":"","hints":["무용, 연극을 많은 사람 앞에서 보이는 일"]}
+{"word":"가수","consonant":"","hints":[""]}
+{"word":"섭섭하다","consonant":"ㅅㅅㅎㄷ","hints":["서운하고 아쉽다"]}
+{"word":"개그맨","consonant":"ㄱㄱㅁ","hints":["웃기는 직업"]}
+{"word":"부동산","consonant":"ㅂㄷㅅ","hints":["토지, 건물"]}
+{"word":"지도","consonant":"ㅈㄷ","hints":["땅 그림"]}
+{"word":"결혼","consonant":"ㄱㅎ","hints":["부부 관계를 맺음"]}
+{"word":"신문","consonant":"ㅅㅁ","hints":["간행물"]}
+{"word":"서약","consonant":"ㅅㅇ","hints":["맹세하고 약속함"]}
+{"word":"맹세","consonant":"ㅁㅅ","hints":[""]}
+{"word":"약속","consonant":"ㅇㅅ","hints":[""]}
+{"word":"만세","consonant":"ㅁㅅ","hints":["경축,환호를 나타내기 위한 동작"]}
+{"word":"계약","consonant":"ㄱㅇ","hints":["지켜야할 의무에 대해 글로 정해둔 약속", ""]}
+{"word":"경쟁","consonant":"ㄱㅈ","hints":["서로 앞서려고 겨룸"]}
+{"word":"정산","consonant":"ㅈㅅ","hints":["계산"]}
+{"word":"소포","consonant":"ㅅㅍ","hints":["물건을 포장하여 보내는 우편"]}
+{"word":"택배","consonant":"ㅌㅂ","hints":["우편물이나 짐을 배달해 주는 일"]}
+{"word":"편지","consonant":"ㅍㅈ","hints":["안부, 소식을 보내는 글"]}
+{"word":"추천","consonant":"ㅊㅊ","hints":["조건에 적합한 무언가를 소개함"]}
+{"word":"주문","consonant":"ㅈㅁ","hints":["요구하거나 부탁함"]}
+{"word":"독해","consonant":"ㄷㅎ","hints":["글을 읽어서 이해함"]}
+{"word":"혁명","consonant":"ㅎㅁ","hints":["관습, 방식을 깨뜨림"]}
+{"word":"독재","consonant":"ㄷㅈ","hints":["히틀러", "모든 권력을 차지하여 독단으로 처리함"]}
+{"word":"독재자","consonant":"ㄷㅈㅈ","hints":["히틀러"]}
+{"word":"틱톡","consonant":"ㅌㅌ","hints":[""]}
+{"word":"제습기","consonant":"ㅈㅅㄱ","hints":["습기 제거"]}
+{"word":"가습기","consonant":"ㄱㅅㄱ","hints":["습도"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
+
+{"word":"인공지능","consonant":"ㅇㄱㅈㄴ","hints":["지능을 가지는 컴퓨터"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+{"word":"생물","consonant":"ㅅㅁ","hints":["생명을 가지는 물체"]}
+{"word":"포도당","consonant":"ㅍㄷㄷ","hints":["단당류", "에너지원"]}
+{"word":"단백질","consonant":"ㄷㅂㅈ","hints":["3대 영양소", "헬창이 무조건 챙기는 것"]}
+{"word":"세포","consonant":"ㅅㅍ","hints":["생물체를 이루는 기본 단위"]}
+{"word":"광합성","consonant":"ㄱㅎㅅ","hints":["식물", "광화학 반응"]}
+{"word":"지방","consonant":"ㅈㅂ","hints":["3대 영양소"]}
+{"word":"탄수화물","consonant":"ㅌㅅㅎㅁ","hints":["3대 영양소", ""]}
+{"word":"피부","consonant":"ㅍㅂ","hints":["몸을 싸고 있는 조직"]}
+{"word":"코로나","consonant":"ㅋㄹㄴ","hints":["바이러스", "19"]}
+{"word":"바이러스","consonant":"ㅂㅇㄹㅅ","hints":["미생물"]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
+
+{"word":"역사","consonant":"ㅇㅅ","hints":["인류 사회의 기록"]}
+{"word":"이순신","consonant":"ㅇㅅㅅ","hints":["조선 무신", "임진왜란"]}
+{"word":"거북선","consonant":"ㄱㅂㅅ","hints":["이순신"]}
+{"word":"세종대왕","consonant":"ㅅㅈㄷㅇ","hints":["조선", "한글"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 
 
 
@@ -298,7 +428,7 @@
 {"word":"손수건","consonant":"ㅅㅅㄱ","hints":[""]}
 {"word":"안경","consonant":"ㅇㄱ","hints":["눈"]}
 {"word":"얼굴","consonant":"ㅇㄱ","hints":["니 ㅇㄱ"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"목도리","consonant":"ㅁㄷㄹ","hints":["목에 두르는 물건"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -317,8 +447,8 @@
 {"word":"이불","consonant":"ㅇㅂ","hints":[""]}
 {"word":"침대","consonant":"ㅊㄷ","hints":["시몬스"]}
 {"word":"슬리퍼","consonant":"ㅅㄹㅍ","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"구두","consonant":"ㄱㄷ","hints":[""]}
+{"word":"가죽","consonant":"ㄱㅈ","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}

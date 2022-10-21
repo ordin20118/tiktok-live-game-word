@@ -50,13 +50,27 @@
 {"word":"가지","consonant":"ㄱㅈ","hints":["채소",""]}
 {"word":"피망","consonant":"ㅍㅁ","hints":["채소",""]}
 {"word":"망고","consonant":"ㅁㄱ","hints":["과일",""]}
+{"word":"애호박","consonant":"ㅇㅎㅂ","hints":["채소",""]}
+{"word":"대추","consonant":"ㄷㅊ","hints":["열매",""]}
+{"word":"도토리","consonant":"ㄷㅌㄹ","hints":["견과류","도토리묵"]}
+{"word":"호두","consonant":"ㅎㄷ","hints":["견과류",""]}
+{"word":"아몬드","consonant":"ㅇㅁㄷ","hints":["견과류",""]}
+{"word":"","consonant":"","hints":["과일",""]}
+{"word":"","consonant":"","hints":["과일",""]}
+{"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 {"word":"","consonant":"","hints":["과일",""]}
 
-
+{"word":"요구르트","consonant":"ㅇㄱㄹㅌ","hints":["발효유",""]}
+{"word":"우유","consonant":"ㅇㅇ","hints":["소의 젖",""]}
+{"word":"","consonant":"","hints":["",""]}
+{"word":"","consonant":"","hints":["",""]}
+{"word":"","consonant":"","hints":["",""]}
+{"word":"","consonant":"","hints":["",""]}
+{"word":"","consonant":"","hints":["",""]}
 
 
 
@@ -70,6 +84,9 @@
 {"word":"고춧가루","consonant":"ㄱㅊㄱㄹ","hints":["조미료",""]}
 {"word":"시나몬","consonant":"ㅅㄴㅁ","hints":["향신료",""]}
 {"word":"간장","consonant":"ㄱㅈ","hints":["조미료",""]}
+{"word":"된장","consonant":"ㄷㅈ","hints":["메주",""]}
+{"word":"","consonant":"","hints":["조미료",""]}
+{"word":"","consonant":"","hints":["조미료",""]}
 {"word":"","consonant":"","hints":["조미료",""]}
 {"word":"","consonant":"","hints":["조미료",""]}
 
@@ -84,9 +101,14 @@
 {"word":"청국장","consonant":"ㅊㄱㅈ","hints":["음식"]}
 {"word":"스시","consonant":"ㅅㅅ","hints":["음식"]}
 {"word":"보쌈","consonant":"ㅂㅆ","hints":["음식"]}
-{"word":"","consonant":"","hints":["음식"]}
-{"word":"","consonant":"","hints":["음식"]}
-{"word":"","consonant":"","hints":["음식"]}
+{"word":"두부","consonant":"ㄷㅂ","hints":["콩으로 만든"]}
+{"word":"건두부","consonant":"ㄱㄷㅂ","hints":["두부"]}
+{"word":"마라탕","consonant":"ㅁㄹㅌ","hints":["음식"]}
+{"word":"불닭볶음면","consonant":"ㅂㄷㅂㅇㅁ","hints":["음식", "라면"]}
+{"word":"열라면","consonant":"ㅇㄹㅁ","hints":["음식", "라면"]}
+{"word":"참깨라면","consonant":"ㅊㄲㄹㅁ","hints":["음식", "라면"]}
+{"word":"청국장","consonant":"ㅊㄱㅈ","hints":["음식", "냄새"]}
+{"word":"삼겹살","consonant":"ㅅㄱㅅ","hints":["음식", "돼지"]}
 {"word":"","consonant":"","hints":["음식"]}
 {"word":"","consonant":"","hints":["음식"]}
 {"word":"","consonant":"","hints":["음식"]}

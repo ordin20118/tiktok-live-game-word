@@ -40,7 +40,6 @@ def import_dog_images(size):
     dog_images.append(pygame.transform.scale(pygame.image.load('game/res/character/dog/dog_jump_3.png'), size))
     dog_images.append(pygame.transform.scale(pygame.image.load('game/res/character/dog/dog_jump_4.png'), size))
     dog_images.append(pygame.transform.scale(pygame.image.load('game/res/character/dog/dog_jump_5.png'), size))
-    dog_images.append(pygame.transform.scale(pygame.image.load('game/res/character/dog/dog_jump_5.png'), size))
     dog_images.append(pygame.transform.scale(pygame.image.load('game/res/character/dog/dog_jump_6.png'), size))
     dog_images.append(pygame.transform.scale(pygame.image.load('game/res/character/dog/dog_jump_7.png'), size))
     dog_images.append(pygame.transform.scale(pygame.image.load('game/res/character/dog/dog_jump_8.png'), size))

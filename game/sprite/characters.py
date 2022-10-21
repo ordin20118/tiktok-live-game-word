@@ -84,7 +84,7 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
   
         base_idx = 0
         if self.direction == 'left':
-            base_idx = 57
+            base_idx = 56
         
         if self.state == 0:             # idle
             self.img_index_start = base_idx + 0
@@ -97,13 +97,13 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
             self.img_index_end = base_idx + 27
         elif self.state == 3:           # jump
             self.img_index_start = base_idx + 28
-            self.img_index_end = base_idx + 36
+            self.img_index_end = base_idx + 35
         elif self.state == 4:           # slide
-            self.img_index_start = base_idx + 37
-            self.img_index_end = base_idx + 46
+            self.img_index_start = base_idx + 36
+            self.img_index_end = base_idx + 45
         elif self.state == 5:           # hurt
-            self.img_index_start = base_idx + 47
-            self.img_index_end = base_idx + 56
+            self.img_index_start = base_idx + 46
+            self.img_index_end = base_idx + 55
 
         self.img_index = self.img_index_start
         self.image = self.images[self.img_index]  # 'image' is the current image of the animation.
@@ -126,7 +126,7 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
         
         base_idx = 0
         if self.direction == 'left':
-            base_idx = 57
+            base_idx = 56
         
         if self.state == 0:             # idle
             self.img_index_start = base_idx + 0
@@ -139,19 +139,22 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
             self.img_index_end = base_idx + 27
         elif self.state == 3:           # jump
             self.img_index_start = base_idx + 28
-            self.img_index_end = base_idx + 36
+            self.img_index_end = base_idx + 35
         elif self.state == 4:           # slide
-            self.img_index_start = base_idx + 37
-            self.img_index_end = base_idx + 46
+            self.img_index_start = base_idx + 36
+            self.img_index_end = base_idx + 45
         elif self.state == 5:           # hurt
-            self.img_index_start = base_idx + 47
-            self.img_index_end = base_idx + 56
+            self.img_index_start = base_idx + 46
+            self.img_index_end = base_idx + 55
 
         if self.img_index < self.img_index_start or self.img_index > self.img_index_end:
             self.img_index = self.img_index_start
 
         # loop 시간 더하기
         self.current_time += mt
+
+        #print("start:[%d]/end:[%d]"%(self.img_index_start, self.img_index_end))               
+        #print("[Now Dog Image IDx]:%d"%self.img_index)
 
         # loop time 경과가 animation_time을 넘어서면 새로운 이미지 출력 
         if self.current_time >= self.animation_time:
