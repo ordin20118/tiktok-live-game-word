@@ -51,10 +51,10 @@
 {"word":"","consonant":"","hints":["영화"]}
 
 
-{"word":"메시","consonant":"ㅁㅅ","hints":["축구"]}
-{"word":"호날두","consonant":"ㅎㄴㄷ","hints":["축구", "날강두"]}
-{"word":"","consonant":"","hints":["축구"]}
-{"word":"","consonant":"","hints":["축구"]}
+{"word":"메시","consonant":"ㅁㅅ","hints":["축구선수"]}
+{"word":"호날두","consonant":"ㅎㄴㄷ","hints":["축구선수", "날강두"]}
+{"word":"손흥민","consonant":"ㅅㅎㅁ","hints":["축구선수"]}
+{"word":"김민재","consonant":"ㄱㅁㅈ","hints":["축구선수"]}
 {"word":"","consonant":"","hints":["축구"]}
 {"word":"","consonant":"","hints":["축구"]}
 {"word":"","consonant":"","hints":["축구"]}
@@ -70,7 +70,7 @@
 {"word":"스위트홈","consonant":"ㅅㅇㅌㅎ","hints":["드라마"]}
 {"word":"이태원클라쓰","consonant":"ㅇㅌㅇㅋㄹㅆ","hints":["드라마"]}
 {"word":"미생","consonant":"ㅁㅅ","hints":["드라마"]}
-{"word":"","consonant":"","hints":["드라마"]}
+{"word":"우영우","consonant":"ㅇㅇㅇ","hints":["드라마"]}
 {"word":"","consonant":"","hints":["드라마"]}
 {"word":"","consonant":"","hints":["드라마"]}
 {"word":"","consonant":"","hints":["드라마"]}

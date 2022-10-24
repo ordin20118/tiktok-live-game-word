@@ -27,6 +27,20 @@
 {"word":"공유","consonant":"ㄱㅇ","hints":["함께 소유함"]}
 {"word":"구구단","consonant":"ㄱㄱㄷ","hints":["5X6","9X9"]}
 {"word":"보상","consonant":"ㅂㅅ","hints":["손해를 갚음"]}
+{"word":"미인","consonant":"ㅁㅇ","hints":["아름다운 사람"]}
+{"word":"미라","consonant":"ㅁㄹ","hints":["오래된 시체"]}
+{"word":"미래","consonant":"ㅁㄹ","hints":["앞으로 올 일"]}
+{"word":"현재","consonant":"ㅎㅈ","hints":["지금"]}
+{"word":"과거","consonant":"ㄱㄱ","hints":["이미 지나간"]}
+{"word":"문화상품권","consonant":"ㅁㅎㅅㅍㄱ","hints":["도서,영화,공연 등의 비용을 대신할 수 있는 것"]}
+{"word":"판사","consonant":"ㅍㅅ","hints":["법원의 법관"]}
+{"word":"검사","consonant":"ㄱㅅ","hints":["사법관"]}
+{"word":"변호사","consonant":"ㅂㅎㅅ","hints":["법률 관련 종사자","피고나 원고를 변론"]}
+{"word":"경력","consonant":"ㄱㄹ","hints":["겪어온 여러 가지 일"]}
+{"word":"홍보","consonant":"ㅎㅂ","hints":["널리 알림"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
@@ -160,8 +174,14 @@
 {"word":"가족","consonant":"ㄱㅈ","hints":["엄마,아빠,형제"]}
 {"word":"할머니","consonant":"ㅎㅁㄴ","hints":["부모의 어머니"]}
 {"word":"포기","consonant":"ㅍㄱ","hints":["그만둠"]}
-{"word":"갯벌","consonant":"갯벌","hints":["밀물에 잠기고 썰물에 드러나는 땅"]}
+{"word":"갯벌","consonant":"ㄱㅂ","hints":["밀물에 잠기고 썰물에 드러나는 땅"]}
 {"word":"자웅동체","consonant":"ㅈㅇㄷㅊ","hints":["지렁이","암수한몸"]}
+{"word":"계모","consonant":"ㄱㅁ","hints":[""]}
+{"word":"결로","consonant":"ㄱㄹ","hints":["이슬이 맺힘"]}
+{"word":"자아도취","consonant":"ㅈㅇㄷㅊ","hints":["스스로에게 빠짐"]}
+{"word":"공모전","consonant":"ㄱㅁㅈ","hints":[""]}
+{"word":"희극","consonant":"ㅎㄱ","hints":["코미디"]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
