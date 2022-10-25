@@ -336,6 +336,7 @@ class Game:
                     self.is_set_timer = False
 
                     self.is_clear_game_data = True
+                    print("[Clear Game Data]")
 
                 if self.is_end_over_animation and self.is_update_rank and self.is_clear_game_data:
                     self.is_end_over_animation = False
@@ -489,21 +490,21 @@ class Game:
                     print("[[ Complete Ready Process ]]")
 
 
-            if self.state == GAME_STATE_OVER and self.draw_result == True:
-                # 게임 결과 애니메이션 출력
-                # TODO: sparkle
-                now_over_animation_time = pygame.time.get_ticks()                
-                animation_time = int((now_over_animation_time - self.over_animation_time) / 1000)
+            # if self.state == GAME_STATE_OVER and self.draw_result == True:
+            #     # 게임 결과 애니메이션 출력
+            #     # TODO: sparkle
+            #     now_over_animation_time = pygame.time.get_ticks()                
+            #     animation_time = int((now_over_animation_time - self.over_animation_time) / 1000)
                 
-                if self.last_right_user != None:
-                    self.print_word_result()
+            #     if self.last_right_user != None:
+            #         self.print_word_result()
                 
 
-                if animation_time == 2:
-                    self.is_end_over_animation = True
-                    self.over_animation_time = 0
-                    self.last_right_user = None
-                    self.draw_result = False
+            #     if animation_time == 2:
+            #         self.is_end_over_animation = True
+            #         self.over_animation_time = 0
+            #         self.last_right_user = None
+                    # self.draw_result = False
                 
 
 
@@ -723,16 +724,12 @@ class Game:
                 # TODO: 프로필 캐시 없다면 저장
                 # 채팅에서 정답 확인
                 if msg_obj['comment'].find(self.now_word.get('word')) != -1:
-                    # 정답을 맞혔다면
-                    print("[%s] 정답!" % msg_obj['nickname'])
+                    # 정답을 맞혔다면                    
                     self.right_user_queue.append(msg_obj)
                     #self.state = GAME_STATE_OVER
                     self.over_animation_time = pygame.time.get_ticks()
                     
-                    self.npc_dog.chat = "%s님이 정답을 맞혔어요!"%msg_obj['nickname']
-                    self.npc_dog.state = int(NPC_DOG_STATE_JUMP)
-                    self.npc_dog.now_movement = (0, 0)
-                    self.npc_dog.motion_time = 3
+                    
 
             elif msg_obj['code'] == MSG_CODE_LIKE and self.state == GAME_STATE_PLAYING:
                 print("[%s] likes count: %d" %(msg_obj['nickname'], msg_obj['like_count']))
@@ -748,9 +745,6 @@ class Game:
                 # must - 도네이션 애니메이션만 출력
                 self.donation_queue.append(msg_obj)
 
-                self.npc_dog.state = int(NPC_DOG_STATE_JUMP)
-                self.npc_dog.now_movement = (0, 0)
-                self.npc_dog.motion_time = 3
 
                 # 플레이 상태라면
                 if self.state == GAME_STATE_PLAYING:
@@ -863,7 +857,7 @@ class Game:
             last_time, current_time = current_time, time.time()
             await asyncio.sleep(1 / FPS - (current_time - last_time))          
             
-            if len(self.donation_queue) > 0 and self.print_user_state == True:
+            if len(self.donation_queue) > 0 and len(self.right_user_queue) <= 0 and self.print_user_state == True:
 
                 self.print_user_state = False
 
@@ -919,6 +913,11 @@ class Game:
                                                     name=donation_obj['nickname'], coin=donation_obj['coin'], images=tmps, sound=self.sound_map['donation'], game=self)
                     self.ui_group.add(new_donation)
                     self.sprite_group.add(new_donation)
+                    
+                    self.npc_dog.state = int(NPC_DOG_STATE_JUMP)
+                    self.npc_dog.now_movement = (0, 0)
+                    self.npc_dog.motion_time = 3
+                    
                     del self.donation_queue[0]
                 except Exception as e:
                     print("[print donation error]:%s" % e)
@@ -995,7 +994,14 @@ class Game:
                                                     name=right_user_obj['nickname'], msg="WINNER", images=tmps, sound=self.sound_map['stage_clear'], game=self)                    
                     self.ui_group.add(new_right_user)                    
                     self.sprite_group.add(new_right_user)
-                    self.last_right_user = self.right_user_queue[0]                                     
+                    self.last_right_user = self.right_user_queue[0]         
+
+                    print("[%s] 정답!" % right_user_obj['nickname'])
+                    self.npc_dog.chat = "%s님이 정답을 맞혔어요!"%right_user_obj['nickname']
+                    self.npc_dog.state = int(NPC_DOG_STATE_JUMP)
+                    self.npc_dog.now_movement = (0, 0)
+                    self.npc_dog.motion_time = 3
+
                     del self.right_user_queue[0]                 
                     self.right_user_queue.clear()
                     self.state = GAME_STATE_OVER 
