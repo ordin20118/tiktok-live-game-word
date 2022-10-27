@@ -77,14 +77,14 @@
 {"word":"","consonant":"","hints":["드라마"]}
 
 
-{"word":"바람의나라","consonant":"ㅂㄹㅇㄴㄹ","hints":["게임",""]}
-{"word":"오버워치","consonant":"ㅇㅂㅇㅊ","hints":["게임",""]}
-{"word":"로스트아크","consonant":"ㄹㅅㅌㅇㅋ","hints":["게임",""]}
-{"word":"","consonant":"","hints":["게임",""]}
-{"word":"","consonant":"","hints":["게임",""]}
-{"word":"","consonant":"","hints":["게임",""]}
-{"word":"","consonant":"","hints":["게임",""]}
-{"word":"","consonant":"","hints":["게임",""]}
+{"word":"바람의나라","consonant":"ㅂㄹㅇㄴㄹ","hints":["게임","MMORPG"]}
+{"word":"오버워치","consonant":"ㅇㅂㅇㅊ","hints":["게임","FPS"]}
+{"word":"로스트아크","consonant":"ㄹㅅㅌㅇㅋ","hints":["게임","MMORPG"]}
+{"word":"배틀그라운드","consonant":"ㅂㅌㄱㄹㅇㄷ","hints":["게임","FPS"]}
+{"word":"메이플스토리","consonant":"ㅁㅇㅍㅅㅌㄹ","hints":["게임","MMORPG"]}
+{"word":"리그오브레전드","consonant":"ㄹㄱㅇㅂㄹㅈㄷ","hints":["게임",""]}
+{"word":"던전앤파이터","consonant":"ㄷㅈㅇㅍㅇㅌ","hints":["게임",""]}
+{"word":"원신","consonant":"ㅇㅅ","hints":["게임",""]}
 {"word":"","consonant":"","hints":["게임",""]}
 {"word":"","consonant":"","hints":["게임",""]}
 {"word":"","consonant":"","hints":["게임",""]}
@@ -92,8 +92,8 @@
 
 
 {"word":"우왁굳","consonant":"ㅇㅇㄱ","hints":["게임 스트리머",""]}
-{"word":"","consonant":"","hints":["게임 스트리머",""]}
-{"word":"","consonant":"","hints":["스트리머",""]}
+{"word":"배돈","consonant":"ㅂㄷ","hints":["게임 스트리머","바람의나라"]}
+{"word":"뜨뜨뜨뜨","consonant":"ㄸㄸㄸㄸ","hints":["스트리머",""]}
 {"word":"","consonant":"","hints":["스트리머",""]}
 {"word":"","consonant":"","hints":["스트리머",""]}
 {"word":"","consonant":"","hints":["스트리머",""]}

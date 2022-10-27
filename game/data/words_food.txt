@@ -7,6 +7,7 @@
 {"word":"맥주","consonant":"ㅁㅈ","hints":["음료",""]}
 {"word":"와인","consonant":"ㅇㅇ","hints":["음료",""]}
 {"word":"위스키","consonant":"ㅇㅅㅋ","hints":["음료",""]}
+{"word":"칵테일","consonant":"ㅋㅌㅇ","hints":["음료","여러 종류의 술을 혼합하여 만든 술"]}
 {"word":"카페인","consonant":"ㅋㅍㅇ","hints":[""]}
 
 
@@ -109,8 +110,8 @@
 {"word":"참깨라면","consonant":"ㅊㄲㄹㅁ","hints":["음식", "라면"]}
 {"word":"청국장","consonant":"ㅊㄱㅈ","hints":["음식", "냄새"]}
 {"word":"삼겹살","consonant":"ㅅㄱㅅ","hints":["음식", "돼지"]}
-{"word":"","consonant":"","hints":["음식"]}
-{"word":"","consonant":"","hints":["음식"]}
+{"word":"하몽","consonant":"ㅎㅁ","hints":["음식", "소금에 절여 건조시킨 햄"]}
+{"word":"햄","consonant":"ㅎ","hints":["음식", "돼지고기를 소금에 절여 훈제한 가공식품"]}
 {"word":"","consonant":"","hints":["음식"]}
 
 

@@ -38,8 +38,12 @@
 {"word":"변호사","consonant":"ㅂㅎㅅ","hints":["법률 관련 종사자","피고나 원고를 변론"]}
 {"word":"경력","consonant":"ㄱㄹ","hints":["겪어온 여러 가지 일"]}
 {"word":"홍보","consonant":"ㅎㅂ","hints":["널리 알림"]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"어원","consonant":"ㅇㅇ","hints":["단어의 근원"]}
+{"word":"바둑","consonant":"ㅂㄷ","hints":["검은 돌과 흰 돌", "알파고"]}
+{"word":"장기","consonant":"ㅈㄱ","hints":["청,홍으로 나뉘어 겨루는 놀이"]}
+{"word":"오목","consonant":"ㅇㅁ","hints":["같은 색 돌을 다섯 개 먼저 늘어놓는 게임"]}
+{"word":"자연","consonant":"ㅈㅇ","hints":["사람의 힘이 더해지지 않은", "산,강,바다"]}
+{"word":"오물","consonant":"ㅇㅁ","hints":["지저분하고 더러운 물건"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -179,14 +183,57 @@
 {"word":"계모","consonant":"ㄱㅁ","hints":[""]}
 {"word":"결로","consonant":"ㄱㄹ","hints":["이슬이 맺힘"]}
 {"word":"자아도취","consonant":"ㅈㅇㄷㅊ","hints":["스스로에게 빠짐"]}
-{"word":"공모전","consonant":"ㄱㅁㅈ","hints":[""]}
-{"word":"희극","consonant":"ㅎㄱ","hints":["코미디"]}
+{"word":"공모전","consonant":"ㄱㅁㅈ","hints":["공개 모집한 작품의 전시회"]}
+{"word":"상상력","consonant":"ㅅㅅㄹ","hints":["경험하지 않은 현싱이나 사물을 마음속으로 그려 보는 힘"]}
+{"word":"기술","consonant":"ㄱㅅ","hints":["사물을 잘 다룰 수 있는 방법이나 능력"]}
+{"word":"단어","consonant":"ㄷㅇ","hints":["분리하여 자립적으로 쓸 수 있는 말"]}
+{"word":"문장","consonant":"ㅁㅈ","hints":["내용을 나타내는 최소 단위"]}
+{"word":"문단","consonant":"ㅁㄷ","hints":["짧은 이야기 토막"]}
+{"word":"알고리즘","consonant":"ㅇㄱㄹㅈ","hints":["공식", "문제 해결을 위한 절차,방법"]}
+{"word":"창작","consonant":"ㅊㅈ","hints":["독창적으로 만들어냄"]}
+{"word":"언론","consonant":"ㅇㄹ","hints":["매체를 통하여 사실을 밝힘", "문제에 대하여 여론을 형성"]}
+{"word":"여론","consonant":"ㅇㄹ","hints":["사회 대중의 공통된 의견"]}
+{"word":"지식","consonant":"ㅈㅅ","hints":["알고 있는 내용이나 사물", "배워서 알게 된 명확한 인식이나 이해"]}
+{"word":"정신","consonant":"ㅈㅅ","hints":["육체나 물질에 대립되는 영혼이나 마음", "마음의 자세나 태도"]}
+{"word":"인플루언서","consonant":"ㅇㅍㄹㅇㅅ","hints":["수많은 팔로워를 통해 대중에게 영향력을 미치는 사람"]}
+{"word":"동호회","consonant":"ㄷㅎㅎ","hints":["같은 취미를 함께 즐기는 모임"]}
+{"word":"에어팟","consonant":"ㅇㅇㅍ","hints":["Apple", "블루투스이어폰"]}
+{"word":"아이폰","consonant":"ㅇㅇㅍ","hints":["Apple", "스마트폰"]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
+
+
+{"word":"희극","consonant":"ㅎㄱ","hints":["코미디"]}
+{"word":"우선순위","consonant":"ㅇㅅㅅㅇ","hints":["먼저 차지하거나 사용할 수 있는 차례"]}
+{"word":"화가","consonant":"ㅎㄱ","hints":["그림 그리는 사람"]}
+{"word":"인상주의","consonant":"ㅇㅅㅈㅇ","hints":["예술의 경향 중 하나", "작가가 받은 순간적인 인상을 표현"]}
+{"word":"모네","consonant":"ㅁㄴ","hints":["인상주의 화가", "클로드 ㅁㄴ"]}
+{"word":"베토벤","consonant":"ㅂㅌㅂ","hints":["독일의 작곡가", "청각장애를 가짐"]}
+{"word":"바흐","consonant":"ㅂㅎ","hints":["바로크 시대 작곡가", "음악의 아버지"]}
+{"word":"헨델","consonant":"ㅎㄷ","hints":["바로크 시대 작곡가", "음악의 어머니"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+{"word":"문명","consonant":"ㅁㅁ","hints":["인류가 이룩한 발전"]}
+{"word":"","consonant":"","hints":[""]}
+
+
+
+{"word":"드래곤","consonant":"ㄷㄹㄱ","hints":["용"]}
+{"word":"신화","consonant":"ㅅㅎ","hints":["신비스러운 이야기"]}
+{"word":"제우스","consonant":"ㅈㅇㅅ","hints":["그리스 신화"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 
 
 {"word":"국가","consonant":"ㄱㄱ","hints":["나라"]}
@@ -226,7 +273,7 @@
 {"word":"포항","consonant":"ㅍㅎ","hints":["지역"]}
 {"word":"김해","consonant":"ㄱㅎ","hints":["지역", "공항"]}
 {"word":"창원","consonant":"ㅊㅇ","hints":["지역"]}
-{"word":"","consonant":"","hints":["지역"]}
+{"word":"광주","consonant":"ㄱㅈ","hints":["지역"]}
 {"word":"","consonant":"","hints":["지역"]}
 {"word":"","consonant":"","hints":["지역"]}
 {"word":"","consonant":"","hints":[""]}
@@ -272,7 +319,12 @@
 {"word":"퇴근","consonant":"ㅌㄱ","hints":["회사"]}
 {"word":"출장","consonant":"ㅊㅈ","hints":["회사"]}
 {"word":"은퇴","consonant":"ㅇㅌ","hints":["직임에서 물러남"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"월급","consonant":"ㅇㄱ","hints":["한 달을 단위로 지급하는 급료"]}
+{"word":"연봉","consonant":"ㅇㅂ","hints":["일 년 동안에 받는 봉급의 총액"]}
+{"word":"재테크","consonant":"ㅈㅌㅋ","hints":["재무 테크놀로지를 줄여쓰는 말"]}
+{"word":"재무","consonant":"ㅈㅁ","hints":["돈이나 재산에 관한 일"]}
+{"word":"책임자","consonant":"ㅊㅇㅈ","hints":["어떤 일에 대하여 책임이 있는 사람"]}
+{"word":"집단","consonant":"ㅈㄷ","hints":["여럿이 모여 이룬 모임"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -353,7 +405,7 @@
 {"word":"틱톡","consonant":"ㅌㅌ","hints":[""]}
 {"word":"제습기","consonant":"ㅈㅅㄱ","hints":["습기 제거"]}
 {"word":"가습기","consonant":"ㄱㅅㄱ","hints":["습도"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"조사","consonant":"ㅈㅅ","hints":["사물의 내용을 알기 위해 자세히 살펴보거나 찾아봄"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -362,8 +414,8 @@
 
 
 {"word":"인공지능","consonant":"ㅇㄱㅈㄴ","hints":["지능을 가지는 컴퓨터"]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"해킹","consonant":"ㅎㅋ","hints":["다른 시스템에 침입해 유해한 영향을 끼치는 행위"]}
+{"word":"보안","consonant":"ㅂㅇ","hints":["안전을 유지함"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
@@ -378,7 +430,7 @@
 {"word":"피부","consonant":"ㅍㅂ","hints":["몸을 싸고 있는 조직"]}
 {"word":"코로나","consonant":"ㅋㄹㄴ","hints":["바이러스", "19"]}
 {"word":"바이러스","consonant":"ㅂㅇㄹㅅ","hints":["미생물"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"유기물","consonant":"ㅇㄱㅁ","hints":["탄소를 포함하고 있는 물질"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -467,8 +519,12 @@
 {"word":"이불","consonant":"ㅇㅂ","hints":[""]}
 {"word":"침대","consonant":"ㅊㄷ","hints":["시몬스"]}
 {"word":"슬리퍼","consonant":"ㅅㄹㅍ","hints":[""]}
-{"word":"구두","consonant":"ㄱㄷ","hints":[""]}
-{"word":"가죽","consonant":"ㄱㅈ","hints":[""]}
+{"word":"구두","consonant":"ㄱㄷ","hints":["신발"]}
+{"word":"가죽","consonant":"ㄱㅈ","hints":["동물의 몸을 감싸고 있는 질긴 껍질"]}
+{"word":"방석","consonant":"ㅂㅅ","hints":["앉을 때 밑에 까는 작은 깔개"]}
+{"word":"가공","consonant":"ㄱㄱ","hints":["인공적으로 처리하여 새로운 제품을 만드는 것"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
