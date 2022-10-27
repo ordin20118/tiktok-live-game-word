@@ -1,4 +1,14 @@
-{"word":"틀","consonant":"ㅉㄱ","hints":["속어","꼰대"]}
+{"word":"틀","consonant":"ㅌ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅌㄸ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
+{"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
 {"word":"틀딱","consonant":"ㅈㄱㅇㄱㅇ","hints":["속어","꼰대"]}
 {"word":"","consonant":"ㅍㅋㅁ","hints":["속어"]}
 {"word":"","consonant":"","hints":["속어"]}

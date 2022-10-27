@@ -40,8 +40,8 @@
 {"word":"해리포터","consonant":"ㅎㄹㅍㅌ","hints":["영화",""]}
 {"word":"괴물","consonant":"ㄱㅁ","hints":["영화",""]}
 {"word":"어벤져스","consonant":"ㅇㅂㅈㅅ","hints":["영화",""]}
+{"word":"범죄도시","consonant":"ㅂㅈㄷㅅ","hints":["영화","마동석"]}
 {"word":"","consonant":"","hints":["영화",""]}
-{"word":"","consonant":"","hints":["영화",""]}
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
@@ -49,6 +49,30 @@
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
+
+
+{"word":"진격의거인","consonant":"ㅈㄱㅇㄱㅇ","hints":["애니메이션"]}
+{"word":"드래곤볼","consonant":"ㄷㄹㄱㅂ","hints":["애니메이션"]}
+{"word":"스파이패밀리","consonant":"ㅅㅍㅇㅍㅁㄹ","hints":["애니메이션", "아냐"]}
+{"word":"원피스","consonant":"ㅇㅍㅅ","hints":["애니메이션"]}
+{"word":"나루토","consonant":"ㄴㄹㅌ","hints":["애니메이션"]}
+{"word":"귀멸의칼날","consonant":"ㄱㅁㅇㅋㄴ","hints":["애니메이션","물의 호흡"]}
+{"word":"귀살대","consonant":"ㄱㅅㄷ","hints":["애니메이션", "귀멸의 칼날"]}
+{"word":"탄지로","consonant":"ㅌㅈㄹ","hints":["애니메이션 주인공", "귀멸의 칼날"]}
+{"word":"네즈코","consonant":"ㄴㅈㅋ","hints":["애니메이션 주인공", "귀멸의 칼날"]}
+{"word":"젠이츠","consonant":"ㅈㅇㅊ","hints":["애니메이션 주인공", "귀멸의 칼날"]}
+{"word":"월트디즈니","consonant":"ㅇㅌㄷㅈㄴ","hints":["만화 영화 제작자","미키 마우스"]}
+{"word":"미키마우스","consonant":"ㅁㅋㅁㅇㅅ","hints":["캐릭터", "디즈니"]}
+{"word":"지브리","consonant":"ㅈㅂㄹ","hints":["애니메이션 제작사","센과 치히로의 행방불명"]}
+{"word":"너의이름은","consonant":"ㄴㅇㅇㄹㅇ","hints":["애니메이션","신카이 마코토"]}
+{"word":"날씨의아이","consonant":"ㄴㅆㅇㅇㅇ","hints":["애니메이션","신카이 마코토"]}
+{"word":"토토로","consonant":"ㅌㅌㄹ","hints":["캐릭터", "지브리"]}
+{"word":"신데렐라","consonant":"ㅅㄷㄹㄹ","hints":["동화 속 여주인공","유리구두"]}
+{"word":"백설공주","consonant":"ㅂㅅㄱㅈ","hints":["일곱 난쟁이"]}
+{"word":"","consonant":"","hints":["애니메이션"]}
+{"word":"","consonant":"","hints":["애니메이션"]}
+{"word":"","consonant":"","hints":["애니메이션"]}
+{"word":"","consonant":"","hints":["애니메이션"]}
 
 
 {"word":"메시","consonant":"ㅁㅅ","hints":["축구선수"]}

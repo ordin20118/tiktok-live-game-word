@@ -199,7 +199,7 @@
 {"word":"동호회","consonant":"ㄷㅎㅎ","hints":["같은 취미를 함께 즐기는 모임"]}
 {"word":"에어팟","consonant":"ㅇㅇㅍ","hints":["Apple", "블루투스이어폰"]}
 {"word":"아이폰","consonant":"ㅇㅇㅍ","hints":["Apple", "스마트폰"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"반지하","consonant":"ㅂㅈㅎ","hints":["절반이 지면 아래에 있는"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -406,6 +406,9 @@
 {"word":"제습기","consonant":"ㅈㅅㄱ","hints":["습기 제거"]}
 {"word":"가습기","consonant":"ㄱㅅㄱ","hints":["습도"]}
 {"word":"조사","consonant":"ㅈㅅ","hints":["사물의 내용을 알기 위해 자세히 살펴보거나 찾아봄"]}
+{"word":"녹","consonant":"ㄴ","hints":["산화 작용으로 쇠붙이에 생기는 물질", "붉거나 푸름"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -478,9 +481,9 @@
 {"word":"세제","consonant":"ㅅㅈ","hints":[""]}
 {"word":"면도기","consonant":"ㅁㄷㄱ","hints":["수염"]}
 {"word":"칫솔","consonant":"ㅊㅅ","hints":["치카치카"]}
-{"word":"치약","consonant":"ㅊㅇ","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"치약","consonant":"ㅊㅇ","hints":["칫솔"]}
+{"word":"주걱","consonant":"ㅈㄱ","hints":["밥을 푸는 도구"]}
+{"word":"스테인리스","consonant":"ㅅㅌㅇㄹㅅ","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
@@ -501,7 +504,11 @@
 {"word":"안경","consonant":"ㅇㄱ","hints":["눈"]}
 {"word":"얼굴","consonant":"ㅇㄱ","hints":["니 ㅇㄱ"]}
 {"word":"목도리","consonant":"ㅁㄷㄹ","hints":["목에 두르는 물건"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"목걸이","consonant":"ㅁㄱㅇ","hints":["목에 거는 장신구"]}
+{"word":"반지","consonant":"ㅂㅈ","hints":["손가락","장식품"]}
+{"word":"귀걸이","consonant":"ㄱㄱㅇ","hints":["귓볼에 다는 장신구"]}
+{"word":"장갑","consonant":"ㅈㄱ","hints":["손을 보호하는 물건"]}
+{"word":"향수","consonant":"ㅎㅅ","hints":["액체","향기로움"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}

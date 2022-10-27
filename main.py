@@ -164,14 +164,15 @@ class Game:
 
         self.total_msg_count = 0
        
-
-        self.candidates = []
+        self.candidates = []            # 단어 후보
+        self.selected_candidates = []   # 한 번 나온 단어
         
         # word 로드
         self.load_word_data("game/data/words.txt")   
         self.load_word_data("game/data/words_entertainment.txt")   
         self.load_word_data("game/data/words_animal.txt")   
-        self.load_word_data("game/data/words_food.txt")    
+        self.load_word_data("game/data/words_food.txt")
+        #self.load_word_data("game/data/words_slang.txt")    
 
 
         # 랭킹 정보 로드 => 그날의 랭킹 데이터가 있다면 로드
@@ -235,19 +236,20 @@ class Game:
             if self.state == GAME_STATE_READY:
                 # 다음 단어 선정
                 # 랜덤 함수 사용     
-                # TODO: 랜덤 문제 뽑기 수정 => 이전에 나온 200개의 단어는 제외            
                 if self.is_set_candidate == False:
                     tmp_arr = list(range(len(self.candidates)))
                     idx = random.randint(0, len(tmp_arr) - 1)
                     self.now_word = self.candidates[idx]
+
+                    self.selected_candidates.append(self.now_word)
+                    del self.candidates[idx]
+
+                    # 남은 단어 후보가 10개 이하라면 이미 나온 단어들을 다시 후보로 넣어준다.
+                    if len(self.candidates) < 10:
+                        self.candidates.extend(self.selected_candidates)
+                        self.selected_candidates = []
                     
-                    # 서버에 단어 전송
-                    # json_obj = {
-                    #     "code": MSG_CODE_SET_WORD,
-                    #     "word": self.now_word['word'],
-                    # }
-                    # json_str = json.dumps(json_obj, ensure_ascii=False)
-                    # self.message_queue.append(json_str)
+                    # 서버에 전송할 현재 단어 설정                    
                     self.send_word = self.now_word['word']
                     
                     # 힌트 개수 카운트                 
