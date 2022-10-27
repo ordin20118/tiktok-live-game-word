@@ -267,5 +267,8 @@ def import_sound():
     stage_clear_sound = pygame.mixer.Sound("game/res/sound/stage_clear.mp3")
     stage_clear_sound.set_volume(0.4)
     sound_map['stage_clear'] = stage_clear_sound
+    bonus_time_tts = pygame.mixer.Sound("game/res/sound/bonus_time_tts.wav")
+    bonus_time_tts.set_volume(0.4)
+    sound_map['bonus_time_tts'] = bonus_time_tts
     return sound_map
     

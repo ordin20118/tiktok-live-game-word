@@ -114,7 +114,7 @@ class Game:
         self.npc_move_term = 500 # NPC 자동 움직임 시간 간격
         self.game_timer_term = 60 * 2    # 게임 플레이 제한 시간 - 240초 => 4분
         self.bonus_time = 0         # 남은 보너스 시간  
-        self.start_bonus_time = 0   # 보너스 시작 시간
+        self.bonus_start_time = 0   # 보너스 시작 시간
 
         
         # 게임 플레이 변수
@@ -311,7 +311,7 @@ class Game:
                         if self.last_right_user['user_id'] in self.rank:
                             update_rank = self.rank[self.last_right_user['user_id']]
                             update_rank['right_count'] += 1
-                            update_rank['nickname'] += self.last_right_user['nickname']
+                            update_rank['nickname'] = self.last_right_user['nickname']
 
                             now_time = time.time()
                             update_rank['right_update_time'] = now_time
@@ -386,7 +386,7 @@ class Game:
             # 힌트 설명 텍스트
             hint_desc_text = self.sebang_font_27_bold.render('1 Coin = 1 Hint', True, self.COLOR_WHITE)
             hint_desc_text_rect = hint_desc_text.get_rect()
-            hint_desc_text_rect.x = SCREEN_WIDTH * 0.12
+            hint_desc_text_rect.x = SCREEN_WIDTH * 0.10
             
             # 힌트 설명 테두리
             hint_desc_rect_border = pygame.draw.rect(self.SCREEN, self.COLOR_YELLOW, 
@@ -395,38 +395,40 @@ class Game:
 
             self.SCREEN.blit(hint_desc_text, (hint_desc_text_rect.x - 10, LAND_BOTTOM_HEIGHT + (SCREEN_HEIGHT * 0.03)))
 
-            # TODO
-            # 보너스 타임에서 하트 목표치 출력
-            # 다음 힌트까지: 10/1000 ❤
-            # self.goal_like_cnt            
-            # self.goal_like_cnt = msg_obj['goal_like_cnt']
-            # self.now_goal_like_cnt = 0
 
+
+            # 보너스 타임에서 하트 목표치 출력
             # 보너스 시간 계산
             if self.bonus_time > 0:
                 now_time = pygame.time.get_ticks()
-                tmp_interval = now_time - self.start_bonus_time            
+                tmp_interval = now_time - self.bonus_start_time            
                 #print("[진행된 보너스 시간]:%s"%(tmp_interval/1000))
 
-                like_goal_text = self.sebang_font_22_bold.render('다음 힌트까지: %s/%s'%(self.now_goal_like_cnt, self.goal_like_cnt), True, self.COLOR_WHITE)
+                like_goal_text = self.sebang_font_18_bold.render('다음 힌트까지: %s/%s Likes'%(self.now_goal_like_cnt, self.goal_like_cnt), True, self.COLOR_WHITE)
                 like_goal_text_rect = like_goal_text.get_rect()
-                like_goal_text_rect.x = SCREEN_WIDTH * 0.12
-                
+                #like_goal_text_rect.x = SCREEN_WIDTH * 0.10
+                                
                 # 힌트 설명 테두리
+                # like_goal_rect_border = pygame.draw.rect(self.SCREEN, self.COLOR_RED_LIGHT, 
+                #                             [like_goal_text_rect.x - 30, (LAND_BOTTOM_HEIGHT + (SCREEN_HEIGHT * 0.09)) - (like_goal_text_rect.size[1] * 0.2), like_goal_text_rect.size[0] * 1.2, like_goal_text_rect.size[1] * 1.4], 
+                #                             width=3, border_radius=0, border_top_left_radius=10, border_top_right_radius=10, border_bottom_left_radius=10, border_bottom_right_radius=10)
+
+                # self.SCREEN.blit(like_goal_text, (like_goal_text_rect.x - 10, LAND_BOTTOM_HEIGHT + (SCREEN_HEIGHT * 0.09)))
+
+                like_goal_text_rect.centerx =SCREEN_WIDTH / 2
                 like_goal_rect_border = pygame.draw.rect(self.SCREEN, self.COLOR_RED_LIGHT, 
-                                            [like_goal_text_rect.x - 30, (LAND_BOTTOM_HEIGHT + (SCREEN_HEIGHT * 0.09)) - (like_goal_text_rect.size[1] * 0.2), like_goal_text_rect.size[0] * 1.2, like_goal_text_rect.size[1] * 1.4], 
+                                            [like_goal_text_rect.x - 30, SCREEN_HEIGHT * 0.15 - (like_goal_text_rect.size[1] * 0.32), like_goal_text_rect.size[0] * 1.2, like_goal_text_rect.size[1] * 1.8], 
                                             width=3, border_radius=0, border_top_left_radius=10, border_top_right_radius=10, border_bottom_left_radius=10, border_bottom_right_radius=10)
 
-                self.SCREEN.blit(like_goal_text, (like_goal_text_rect.x - 10, LAND_BOTTOM_HEIGHT + (SCREEN_HEIGHT * 0.09)))
-
+                self.SCREEN.blit(like_goal_text, (like_goal_text_rect.x - 10, SCREEN_HEIGHT * 0.15))
                 
-
                 if (tmp_interval/1000) >= self.bonus_time:
                     self.bonus_time = 0
-                    self.start_bonus_time = 0
+                    self.bonus_start_time = 0
                     self.now_goal_like_cnt = 0
                     self.goal_like_cnt = 0                    
-                    print("시간 종료")
+                    self.op_npc('보너스 시간이 종료되었습니다.', NPC_DOG_STATE_HURT, 'left', (0,0), 2)
+                    print("보너스 시간 종료")
             
 
            
@@ -441,8 +443,12 @@ class Game:
                 
                 rank_text_rect = None
                 name = rank['nickname']
-                if len(name) > 12:
+                
+                if (idx == 0 or idx == 1) and len(name) > 9:
+                    name = name[0:9] + '..'
+                elif len(name) > 12:
                     name = name[0:12] + '..'
+
                 name_str = "%s  %d Win"%(name, rank['right_count'])
                 if idx == 0:
                     rank_text = self.sebang_font_22_bold.render("%dst"%(idx+1), True, self.COLOR_YELLOW)
@@ -822,19 +828,18 @@ class Game:
             
             elif msg_obj['code'] == MSG_CODE_NOTICE:
                 print(msg_obj)
-                self.npc_dog.state = int(msg_obj['motion_code'])
-                if msg_obj['msg'] != None and len(msg_obj['msg']) > 0:
-                    self.npc_dog.chat = msg_obj['msg']                
-                self.npc_dog.now_movement = (int(msg_obj['movement']), 0)
-                self.npc_dog.direction = msg_obj['direction']
-                self.npc_dog.motion_time = int(msg_obj['motion_time'])
+                # self.npc_dog.state = int(msg_obj['motion_code'])
+                # if msg_obj['msg'] != None and len(msg_obj['msg']) > 0:
+                #     self.npc_dog.chat = msg_obj['msg']                
+                # self.npc_dog.now_movement = (int(msg_obj['movement']), 0)
+                # self.npc_dog.direction = msg_obj['direction']
+                # self.npc_dog.motion_time = int(msg_obj['motion_time'])
+                self.op_npc(msg_obj['msg'], int(msg_obj['motion_code']), msg_obj['direction'], (int(msg_obj['movement']), 0), int(msg_obj['motion_time']))
+
             
-            elif msg_obj['code'] == MSG_CODE_BONUS:
-                # TODO
-                self.start_bonus_time = pygame.time.get_ticks()
-                self.bonus_time = msg_obj['time']
-                self.goal_like_cnt = int(msg_obj['goal_like_cnt'])
-                self.now_goal_like_cnt = 0
+            elif msg_obj['code'] == MSG_CODE_BONUS:                
+                self.start_bonus_time(msg_obj['time'], int(msg_obj['goal_like_cnt']))
+                
                 
                 
 
@@ -881,9 +886,25 @@ class Game:
             send_word_task.cancel()
         pygame.quit()
 
-    # TODO
+
+    # TODO: npc 조종 함수
+    def op_npc(self, msg, motion_code, direction, movement, motion_time):
+        self.npc_dog.state = int(motion_code)
+        if msg != None and len(msg) > 0:
+            self.npc_dog.chat = msg
+        self.npc_dog.now_movement = movement
+        self.npc_dog.direction = direction
+        self.npc_dog.motion_time = motion_time
+
+    # 보너스 타임 시작
     def start_bonus_time(self, time, goal):
-        pass
+        self.bonus_start_time = pygame.time.get_ticks()
+        self.bonus_time = time
+        self.goal_like_cnt = goal
+        self.now_goal_like_cnt = 0        
+        #self.sound_map['bonus_time_tts'].play()
+        self.op_npc('지금부터 %s분간 하트로 힌트를 사용할 수 있습니다.'%int(time/60), NPC_DOG_STATE_RUN, 'left', (-6,0), 5)
+
 
     def update_rank(self, user):
         print("[update_rank]")
@@ -1070,19 +1091,6 @@ class Game:
                 except Exception as e:
                     print("[print user error]:%s" % e)
                     del self.right_user_queue[0]
-
-    
-    # def spawn_npc(self, group):
-    #     if group == 'right':
-    #         new_soldier = characters.SoldierSprite(size=self.soldier_size, position=RIGHT_SPAWN_POSITION, movement=(-1,0), state=1, group=group, 
-    #                                             hp=100, power=1, name='%s_soldier'%group, images=soldier_images_right, game=self)
-    #         self.right_group.add(new_soldier)
-    #         self.sprite_group.add(new_soldier)
-    #     elif group == 'left':
-    #         new_soldier = characters.SoldierSprite(size=self.soldier_size, position=LEFT_SPAWN_POSITION, movement=(1,0), state=1, group=group, 
-    #                                         hp=100, power=1, name='%s_soldier'%group, images=soldier_images_left, game=self)
-    #         self.left_group.add(new_soldier)
-    #         self.sprite_group.add(new_soldier)
 
     def print_random_consonant(self):
         
