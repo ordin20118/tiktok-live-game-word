@@ -55,14 +55,21 @@ class Game:
         self.COLOR_BLACK = (0, 0, 0)
         self.COLOR_WHITE = (255, 255, 255)
         self.COLOR_YELLOW = (255, 228, 0)
+        self.COLOR_YELLOW_LEMON = (255, 255, 159)
+        self.COLOR_ORANGE_PEEL = (255, 159, 0)
         self.COLOR_BLUE_LIGHT = (103, 153, 255)
         self.COLOR_BLUE_DEEP = (1, 0, 255)
         self.COLOR_BLUE_DARK = (0, 34, 102)
         self.COLOR_GREEN_LIGHT = (183, 240, 177)
         self.COLOR_GREEN_DEEP = (47, 157, 39)
         self.COLOR_PURPLE = (95, 0, 255)
+        self.COLOR_PURPLE_LIGHT = (150, 120, 182)
+        self.COLOR_PURPLE_DARK = (120, 85, 157)
         self.COLOR_RED_LIGHT = (255, 167, 167)
         self.COLOR_GREY_LIGHT = (213, 213, 213)
+        self.COLOR_BROWN = (136, 101, 78)
+        self.COLOR_BROWN_DARK = (69, 48, 10)
+        self.COLOR_JELLY_BEAN_BLUE = (68, 121, 142)
         
         self.main_font_60 = pygame.font.Font("game/res/font/NanumBarunGothicBold.ttf", 60)
         self.main_font_30 = pygame.font.Font("game/res/font/NanumBarunGothicBold.ttf", 30)   
@@ -363,7 +370,7 @@ class Game:
             self.sprite_group.update(mt, self)         
             
             # 배경색
-            self.SCREEN.fill(self.COLOR_BLUE) 
+            self.SCREEN.fill(self.COLOR_PURPLE_LIGHT) 
 
             # 설명 UI
             desc_rect_x = SCREEN_WIDTH * 0.04
@@ -383,15 +390,15 @@ class Game:
 
 
             # 하단 배경
-            chat_back_rect = pygame.draw.rect(self.SCREEN, self.COLOR_BLUE_DARK, [0, LAND_BOTTOM_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - LAND_BOTTOM_HEIGHT])
+            chat_back_rect = pygame.draw.rect(self.SCREEN, self.COLOR_YELLOW_LEMON, [0, LAND_BOTTOM_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - LAND_BOTTOM_HEIGHT])
 
             # 힌트 설명 텍스트
-            hint_desc_text = self.sebang_font_27_bold.render('1 Coin = 1 Hint', True, self.COLOR_WHITE)
+            hint_desc_text = self.sebang_font_27_bold.render('1 Coin = 1 Hint', True, self.COLOR_BROWN_DARK)
             hint_desc_text_rect = hint_desc_text.get_rect()
             hint_desc_text_rect.x = SCREEN_WIDTH * 0.10
             
             # 힌트 설명 테두리
-            hint_desc_rect_border = pygame.draw.rect(self.SCREEN, self.COLOR_YELLOW, 
+            hint_desc_rect_border = pygame.draw.rect(self.SCREEN, self.COLOR_ORANGE_PEEL, 
                                         [hint_desc_text_rect.x - 30, (LAND_BOTTOM_HEIGHT + (SCREEN_HEIGHT * 0.03)) - (hint_desc_text_rect.size[1] * 0.2), hint_desc_text_rect.size[0] * 1.2, hint_desc_text_rect.size[1] * 1.4], 
                                         width=3, border_radius=0, border_top_left_radius=10, border_top_right_radius=10, border_bottom_left_radius=10, border_bottom_right_radius=10)
 
@@ -453,14 +460,14 @@ class Game:
 
                 name_str = "%s  %d Win"%(name, rank['right_count'])
                 if idx == 0:
-                    rank_text = self.sebang_font_22_bold.render("%dst"%(idx+1), True, self.COLOR_YELLOW)
+                    rank_text = self.sebang_font_22_bold.render("%dst"%(idx+1), True, self.COLOR_BROWN)
                     rank_text_rect = rank_text.get_rect()
 
-                    rank_name_text = self.sebang_font_22_bold.render(name, True, self.COLOR_WHITE)
+                    rank_name_text = self.sebang_font_22_bold.render(name, True, self.COLOR_JELLY_BEAN_BLUE)
                     rank_name_text_rect = rank_name_text.get_rect()
                     rank_name_text_rect.x = rank_text_rect.x + 15
 
-                    rank_count_text = self.sebang_font_20_bold.render("%d Win" %(rank['right_count']), True, self.COLOR_WHITE)
+                    rank_count_text = self.sebang_font_20_bold.render("%d Win" %(rank['right_count']), True, self.COLOR_JELLY_BEAN_BLUE)
                     rank_count_text_rect = rank_count_text.get_rect()
                     rank_count_text_rect.x = rank_name_text_rect.x + 15
 
@@ -471,7 +478,7 @@ class Game:
                     rank_text = self.sebang_font_18_bold.render("%dnd"%(idx+1), True, self.COLOR_GREEN_DEEP)
                     rank_text_rect = rank_text.get_rect()
 
-                    rank_name_text = self.sebang_font_18_bold.render(name_str, True, self.COLOR_WHITE)
+                    rank_name_text = self.sebang_font_18_bold.render(name_str, True, self.COLOR_JELLY_BEAN_BLUE)
                     rank_name_text_rect = rank_name_text.get_rect()
                     rank_name_text_rect.x = rank_text_rect.x + 15
 
@@ -481,18 +488,18 @@ class Game:
                     rank_text = self.sebang_font_18_bold.render("%drd"%(idx+1), True, self.COLOR_PURPLE)
                     rank_text_rect = rank_text.get_rect()
 
-                    rank_name_text = self.sebang_font_18_bold.render(name_str, True, self.COLOR_WHITE)
+                    rank_name_text = self.sebang_font_18_bold.render(name_str, True, self.COLOR_JELLY_BEAN_BLUE)
                     rank_name_text_rect = rank_name_text.get_rect()
                     rank_name_text_rect.x = rank_text_rect.x + 15
 
                     self.SCREEN.blit(rank_text, (rank_x, rank_y))
                     self.SCREEN.blit(rank_name_text, (rank_x + rank_text_rect.size[0] + 15, rank_y))
                 else:
-                    rank_text = self.sebang_font_18_bold.render("%dth"%(idx+1), True, self.COLOR_WHITE)
+                    rank_text = self.sebang_font_18_bold.render("%dth"%(idx+1), True, self.COLOR_JELLY_BEAN_BLUE)
                     rank_text_rect = rank_text.get_rect()
                     #rank_text_rect.x = SCREEN_WIDTH * 0.6
 
-                    rank_name_text = self.sebang_font_18_bold.render(name_str, True, self.COLOR_WHITE)
+                    rank_name_text = self.sebang_font_18_bold.render(name_str, True, self.COLOR_JELLY_BEAN_BLUE)
                     rank_name_text_rect = rank_name_text.get_rect()
                     rank_name_text_rect.x = rank_text_rect.x + 15
 
@@ -978,7 +985,7 @@ class Game:
                             lum_img = Image.new('L', [height,width] , 0)
                             
                             draw = ImageDraw.Draw(lum_img)
-                            draw.pieslice([(0,0), (height,width)], 0, 360, 
+                            draw.pieslice([(0,0), (height - 3, width - 3)], 0, 360, 
                                         fill = 255, outline = "white")
                             img_arr =np.array(pil_img)
                             lum_img_arr =np.array(lum_img)                    
@@ -990,7 +997,7 @@ class Game:
                             final_pil_img.save(cache_path, 'png')
                             image = pygame.transform.scale(pygame.image.load(cache_path), self.donation_size)
                         except:
-                            image = pygame.transform.scale(pygame.image.load('game/res/cache/profile/default.png'), self.right_profile_size)
+                            image = pygame.transform.scale(pygame.image.load('game/res/default.png'), self.right_profile_size)
 
                     tmps = []
                     tmps.append(image)                    
@@ -1055,7 +1062,7 @@ class Game:
                             lum_img = Image.new('L', [height,width] , 0)
                             
                             draw = ImageDraw.Draw(lum_img)
-                            draw.pieslice([(0,0), (height,width)], 0, 360, 
+                            draw.pieslice([(0,0), (height - 3, width - 3)], 0, 360, 
                                         fill = 255, outline = "white")
                             img_arr =np.array(pil_img)
                             lum_img_arr =np.array(lum_img)                    
@@ -1069,7 +1076,7 @@ class Game:
                             final_pil_img.save(cache_path, 'png')
                             image = pygame.transform.scale(pygame.image.load(cache_path), self.right_profile_size)
                         except:
-                            image = pygame.transform.scale(pygame.image.load('game/res/cache/profile/default.png'), self.right_profile_size)
+                            image = pygame.transform.scale(pygame.image.load('game/res/default.png'), self.right_profile_size)
 
                     print("[Getted cropped image]")
 

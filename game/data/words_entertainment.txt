@@ -50,6 +50,14 @@
 {"word":"","consonant":"","hints":["영화"]}
 {"word":"","consonant":"","hints":["영화"]}
 
+{"word":"웹툰","consonant":"ㅇㅌ","hints":[""]}
+{"word":"외모지상주의","consonant":"ㅇㅁㅈㅅㅈㅇ","hints":["웹툰"]}
+{"word":"박태준","consonant":"ㅂㅌㅈ","hints":["웹툰 작가", "외모지상주의"]}
+{"word":"","consonant":"","hints":["웹툰"]}
+{"word":"","consonant":"","hints":["웹툰"]}
+{"word":"","consonant":"","hints":["웹툰"]}
+{"word":"","consonant":"","hints":["웹툰"]}
+
 
 {"word":"진격의거인","consonant":"ㅈㄱㅇㄱㅇ","hints":["애니메이션"]}
 {"word":"드래곤볼","consonant":"ㄷㄹㄱㅂ","hints":["애니메이션"]}

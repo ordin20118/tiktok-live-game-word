@@ -407,8 +407,8 @@
 {"word":"가습기","consonant":"ㄱㅅㄱ","hints":["습도"]}
 {"word":"조사","consonant":"ㅈㅅ","hints":["사물의 내용을 알기 위해 자세히 살펴보거나 찾아봄"]}
 {"word":"녹","consonant":"ㄴ","hints":["산화 작용으로 쇠붙이에 생기는 물질", "붉거나 푸름"]}
-{"word":"","consonant":"","hints":[""]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"염치","consonant":"ㅇㅊ","hints":["체면을 차릴 줄 알고 부끄러움을 아는 마음"]}
+{"word":"화재","consonant":"ㅎㅈ","hints":["불로 인한 재난"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -434,7 +434,7 @@
 {"word":"코로나","consonant":"ㅋㄹㄴ","hints":["바이러스", "19"]}
 {"word":"바이러스","consonant":"ㅂㅇㄹㅅ","hints":["미생물"]}
 {"word":"유기물","consonant":"ㅇㄱㅁ","hints":["탄소를 포함하고 있는 물질"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"명치","consonant":"ㅁㅊ","hints":["가슴뼈 아래 중앙의 오목하게 들어간 곳"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
