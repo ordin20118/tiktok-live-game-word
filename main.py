@@ -594,8 +594,8 @@ class Game:
 
                 timer_text = self.sebang_font_30_bold.render(timer_str, True, self.COLOR_BLACK)
                 timer_text_rect = timer_text.get_rect()
-                timer_text_rect.centerx = int(SCREEN_WIDTH * 0.5)
-                self.SCREEN.blit(timer_text, (timer_text_rect.x, SCREEN_HEIGHT * 0.45))
+                timer_text_rect.centerx = int(SCREEN_WIDTH * 0.85)
+                self.SCREEN.blit(timer_text, (timer_text_rect.x, SCREEN_HEIGHT * 0.1))
 
 
                 # 힌트 출력 
