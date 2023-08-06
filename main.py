@@ -72,6 +72,7 @@ class Game:
         self.COLOR_JELLY_BEAN_BLUE = (68, 121, 142)
         
         self.main_font_60 = pygame.font.Font("game/res/font/NanumBarunGothicBold.ttf", 60)
+        self.main_font_40 = pygame.font.Font("game/res/font/NanumBarunGothicBold.ttf", 40)   
         self.main_font_30 = pygame.font.Font("game/res/font/NanumBarunGothicBold.ttf", 30)   
         self.main_font_25 = pygame.font.Font("game/res/font/NanumBarunGothicBold.ttf", 25)   
         self.main_font_20 = pygame.font.Font("game/res/font/NanumBarunGothicBold.ttf", 20) 
@@ -160,7 +161,7 @@ class Game:
         self.now_hint_idx = -1
         self.max_hint_count = 0
         self.now_hint_count = 0
-        self.hint_height = SCREEN_HEIGHT * 0.39
+        self.hint_height = SCREEN_HEIGHT * 0.34
         
         self.last_right_user = None
 
@@ -262,6 +263,7 @@ class Game:
                     # 힌트 개수 카운트                 
                     hint_count = 0
                     hints = self.now_word['hints']
+                    
                     for hint in hints:
                         if hint != "" and len(hint) > 0:
                             hint_count += 1
@@ -382,10 +384,10 @@ class Game:
             #                             width=3, border_radius=0, border_top_left_radius=10, border_top_right_radius=10, border_bottom_left_radius=10, border_bottom_right_radius=10)
 
             # 채팅으로 정답을 맞혀보세요            
-            text_join_desc = self.main_font_30.render("채팅으로 정답을 맞혀보세요", True, self.COLOR_GREY_LIGHT)
-            text_join_desc_rect = text_join_desc.get_rect()
-            text_join_desc_rect.centerx = SCREEN_WIDTH / 2
-            self.SCREEN.blit(text_join_desc, (text_join_desc_rect.x, SCREEN_HEIGHT * 0.2))
+            # text_join_desc = self.main_font_30.render("채팅으로 정답을 맞혀보세요", True, self.COLOR_GREY_LIGHT)
+            # text_join_desc_rect = text_join_desc.get_rect()
+            # text_join_desc_rect.centerx = SCREEN_WIDTH / 2
+            # self.SCREEN.blit(text_join_desc, (text_join_desc_rect.x, SCREEN_HEIGHT * 0.2))
            
 
 
@@ -393,7 +395,7 @@ class Game:
             chat_back_rect = pygame.draw.rect(self.SCREEN, self.COLOR_YELLOW_LEMON, [0, LAND_BOTTOM_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - LAND_BOTTOM_HEIGHT])
 
             # 힌트 설명 텍스트
-            hint_desc_text = self.sebang_font_27_bold.render('1 Coin = 1 Hint', True, self.COLOR_BROWN_DARK)
+            hint_desc_text = self.sebang_font_27_bold.render('장미 1개 = 1 힌트', True, self.COLOR_BROWN_DARK)
             hint_desc_text_rect = hint_desc_text.get_rect()
             hint_desc_text_rect.x = SCREEN_WIDTH * 0.10
             
@@ -413,7 +415,7 @@ class Game:
                 tmp_interval = now_time - self.bonus_start_time            
                 #print("[진행된 보너스 시간]:%s"%(tmp_interval/1000))
 
-                like_goal_text = self.sebang_font_18_bold.render('다음 힌트까지: %s/%s Likes'%(self.now_goal_like_cnt, self.goal_like_cnt), True, self.COLOR_WHITE)
+                like_goal_text = self.sebang_font_18_bold.render('다음 힌트까지: %s/%s 좋아요'%(self.now_goal_like_cnt, self.goal_like_cnt), True, self.COLOR_WHITE)
                 like_goal_text_rect = like_goal_text.get_rect()
                 #like_goal_text_rect.x = SCREEN_WIDTH * 0.10
                                 
@@ -596,26 +598,31 @@ class Game:
                 self.SCREEN.blit(timer_text, (timer_text_rect.x, SCREEN_HEIGHT * 0.45))
 
 
-                # TODO: 힌트 출력 
+                # 힌트 출력 
                 # 현재 워드의 힌트 리스트에서 현재 힌트 idx 위치에 사용 가능한 힌트가 있다면
-                # <힌트 있음>
-                # 없다면 <힌트 없음> 표시
+                # <남은 힌트: a개>
                 # coin 후원 받으면 힌트 출력
                 # <힌트 있음> 아래에 힌트1. ㅁㅁㅁㅁㅁ 힌트2. ㅁㅁㅁㅁ 이런 형식으로 출력
-
                 for idx, hint in enumerate(self.now_word['hints']):
                     if idx <= self.now_hint_idx and hint != "" and len(hint) > 0:
-                        hint_text = self.main_font_15.render('힌트%d: %s'%(idx+1, hint), True, self.COLOR_GREY_LIGHT)
+                        hint_text = self.main_font_20.render('힌트%d: %s'%(idx+1, hint), True, self.COLOR_GREY_LIGHT)
                         hint_text_rect = hint_text.get_rect()
                         hint_text_rect.centerx = int(SCREEN_WIDTH * 0.5)
-                        self.SCREEN.blit(hint_text, (hint_text_rect.x, self.hint_height + (SCREEN_HEIGHT * 0.02 * idx)))
+                        self.SCREEN.blit(hint_text, (hint_text_rect.x, self.hint_height + (SCREEN_HEIGHT * 0.03 * idx)))
+                    elif idx > self.now_hint_idx and hint != "" and len(hint) > 0:
+                        blind_hint = "ㅁ" * len(hint)
+                        hint_text = self.main_font_20.render('힌트%d: %s'%(idx+1, "ㅁㅁㅁㅁ"), True, self.COLOR_GREY_LIGHT)
+                        hint_text_rect = hint_text.get_rect()
+                        hint_text_rect.centerx = int(SCREEN_WIDTH * 0.5)
+                        self.SCREEN.blit(hint_text, (hint_text_rect.x, self.hint_height + (SCREEN_HEIGHT * 0.03 * idx)))
                         
 
                 self.now_hint_count = self.max_hint_count - (self.now_hint_idx + 1)
-                hint_cnt_text = self.main_font_13.render('<남은 힌트: %d>'%self.now_hint_count, True, self.COLOR_GREY_LIGHT)
+                hint_cnt_text = self.main_font_25.render('[ 남은 힌트: %d개 ]'%self.now_hint_count, True, self.COLOR_GREY_LIGHT)
                 hint_cnt_text_rect = hint_cnt_text.get_rect()
                 hint_cnt_text_rect.centerx = int(SCREEN_WIDTH * 0.5)
-                self.SCREEN.blit(hint_cnt_text, (hint_cnt_text_rect.x, SCREEN_HEIGHT * 0.36))
+                #self.SCREEN.blit(hint_cnt_text, (hint_cnt_text_rect.x, SCREEN_HEIGHT * 0.36))
+                self.SCREEN.blit(hint_cnt_text, (hint_cnt_text_rect.x, SCREEN_HEIGHT * 0.3))
                 
                 
                 self.print_word_ui()
@@ -718,7 +725,7 @@ class Game:
                         if self.state == GAME_STATE_PLAYING:
                             # 도네이션 액수 확인
                             diamondCnt = msg_obj['coin']
-                            if diamondCnt >= 1 and diamondCnt < 5:
+                            if diamondCnt >= 1 and diamondCnt < 100:
                                 # 힌트
                                 pass                         
                             elif diamondCnt >= 100:
@@ -767,8 +774,8 @@ class Game:
     def ws_msg_process(self, message):
         msg_obj = None
         msg_obj = json.loads(message)
-        #print("[[ Message Object ]]")                    
-        #print(msg_obj)                
+        # print("[[ Message Object ]]")                    
+        # print(msg_obj)                
         
         if msg_obj != None:
             if msg_obj['code'] == MSG_CODE_COMMENT and self.state == GAME_STATE_PLAYING:
@@ -782,6 +789,7 @@ class Game:
                 # TODO: 프로필 캐시 없다면 저장
                 # 채팅에서 정답 확인
                 if msg_obj['comment'].find(self.now_word.get('word')) != -1:
+                    print("\n\n 정답!!! \n\n")
                     # 정답을 맞혔다면                    
                     self.right_user_queue.append(msg_obj)
                     #self.state = GAME_STATE_OVER
@@ -815,16 +823,19 @@ class Game:
                     # 도네이션 액수 확인
                     diamondCnt = msg_obj['coin']
                     if diamondCnt >= 100:
-                        # 패스
+                        # 패스 - TODO: 현재는 힌트를 보여주는 것으로 되어있음..
                         if self.max_hint_count > (self.now_hint_idx + 1):
                             self.now_hint_idx += 1
-                            print("[now hint idx]:%d"%self.now_hint_idx)
+                            #print("[now hint idx]:%d"%self.now_hint_idx)
+                            self.op_npc('더 이상 힌트가 없어요..', NPC_DOG_STATE_HURT, 'left', (0,0), 3)
                         
                     elif diamondCnt >= 1 and diamondCnt < 100:
                         # 힌트
                         if self.max_hint_count > (self.now_hint_idx + 1):
                             self.now_hint_idx += 1
-                            print("[now hint idx]:%d"%self.now_hint_idx)
+                            #print("[now hint idx]:%d"%self.now_hint_idx)
+                        elif self.max_hint_count <= (self.now_hint_idx + 1):
+                            self.op_npc('더 이상 힌트가 없어요..', NPC_DOG_STATE_HURT, 'left', (0,0), 3)
                         
                    
             elif msg_obj['code'] == MSG_CODE_SHARE:
@@ -1110,12 +1121,11 @@ class Game:
         front_empty_width = (SCREEN_WIDTH - (word_len * word_size[0]) - (term_width * (word_len - 1))) / 2
         
         space_x = front_empty_width
-        space_y = SCREEN_HEIGHT * 0.26 # + ((SCREEN_WIDTH / 4) * 0.15)
+        space_y = SCREEN_HEIGHT * 0.2 # + ((SCREEN_WIDTH / 4) * 0.15)
         for idx in range(0, word_len):     
-            #pygame.draw.rect(self.SCREEN, self.COLOR_GREY_LIGHT, [space_x, space_y, word_size[0], word_size[1]])
             now_rect = pygame.draw.rect(self.SCREEN, (213, 213, 213), [space_x, space_y, word_size[0], word_size[1]], border_radius=15)
 
-            word_text = self.main_font_20.render(self.random_consonant[idx], True, self.COLOR_BLACK)            
+            word_text = self.main_font_40.render(self.random_consonant[idx], True, self.COLOR_BLACK)            
             word_text_rect = word_text.get_rect()        
             name_text_size = word_text_rect.size
             word_text_rect.centerx = now_rect.centerx
@@ -1136,12 +1146,13 @@ class Game:
         front_empty_width = (SCREEN_WIDTH - (word_len * word_size[0]) - (term_width * (word_len - 1))) / 2
         
         space_x = front_empty_width
-        space_y = SCREEN_HEIGHT * 0.26 # + ((SCREEN_WIDTH / 4) * 0.15)
+        #space_y = SCREEN_HEIGHT * 0.26 # + ((SCREEN_WIDTH / 4) * 0.15)
+        space_y = SCREEN_HEIGHT * 0.2 # + ((SCREEN_WIDTH / 4) * 0.15)
         for idx in range(0, word_len):     
             #pygame.draw.rect(self.SCREEN, self.COLOR_GREY_LIGHT, [space_x, space_y, word_size[0], word_size[1]])
             now_rect = pygame.draw.rect(self.SCREEN, (213, 213, 213), [space_x, space_y, word_size[0], word_size[1]], border_radius=15)
 
-            word_text = self.main_font_20.render(self.now_word['consonant'][idx], True, self.COLOR_BLACK)            
+            word_text = self.main_font_40.render(self.now_word['consonant'][idx], True, self.COLOR_BLACK)            
             word_text_rect = word_text.get_rect()        
             name_text_size = word_text_rect.size
             word_text_rect.centerx = now_rect.centerx
@@ -1158,12 +1169,11 @@ class Game:
         front_empty_width = (SCREEN_WIDTH - (word_len * word_size[0]) - (term_width * (word_len - 1))) / 2
         
         space_x = front_empty_width
-        space_y = SCREEN_HEIGHT * 0.26 # + ((SCREEN_WIDTH / 4) * 0.15)
+        space_y = SCREEN_HEIGHT * 0.2 # + ((SCREEN_WIDTH / 4) * 0.15)
         for idx in range(0, word_len):        
-            #pygame.draw.rect(self.SCREEN, self.COLOR_GREY_LIGHT, [space_x, space_y, word_size[0], word_size[1]])
             now_rect = pygame.draw.rect(self.SCREEN, (213, 213, 213), [space_x, space_y, word_size[0], word_size[1]], border_radius=15)
 
-            word_text = self.main_font_20.render(self.now_word['word'][idx], True, self.COLOR_BLACK)            
+            word_text = self.main_font_40.render(self.now_word['word'][idx], True, self.COLOR_BLACK)            
             word_text_rect = word_text.get_rect()        
             name_text_size = word_text_rect.size
             word_text_rect.centerx = now_rect.centerx

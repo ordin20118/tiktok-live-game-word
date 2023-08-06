@@ -17,7 +17,7 @@
 {"word":"이병헌","consonant":"ㅇㅂㅎ","hints":["연예인","미스터 선샤인"]}
 {"word":"유연석","consonant":"ㅇㅇㅅ","hints":["A멘","수리남"]}
 {"word":"마동석","consonant":"ㅁㄷㅅ","hints":["영화배우",""]}
-{"word":"원빈","consonant":"ㅇㅂ","hints":["연예인",""]}
+{"word":"원빈","consonant":"ㅇㅂ","hints":["연예인"]}
 {"word":"신세경","consonant":"ㅅㅅㄱ","hints":["영화배우",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
 {"word":"","consonant":"","hints":["연예인",""]}
