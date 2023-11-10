@@ -119,10 +119,10 @@ class Game:
         self.right_user_queue = []  # 정답자 큐
 
         ### 시간 관련 변수 ###
-        self.npc_move_term = 500 # NPC 자동 움직임 시간 간격
-        self.game_timer_term = 60 * 2    # 게임 플레이 제한 시간 - 240초 => 4분
-        self.bonus_time = 0         # 남은 보너스 시간  
-        self.bonus_start_time = 0   # 보너스 시작 시간
+        self.npc_move_term = 500       # NPC 자동 움직임 시간 간격
+        self.game_timer_term = 60 * 2  # 게임 플레이 제한 시간 - 240초 => 4분
+        self.bonus_time = 0            # 남은 보너스 시간  
+        self.bonus_start_time = 0      # 보너스 시작 시간
 
         
         # 게임 플레이 변수
@@ -285,7 +285,10 @@ class Game:
                 # 모든 처리가 완료되면 game state START로 변경
                 if self.is_set_tiles and self.is_set_candidate:
                     #self.state = GAME_STATE_START
-                    self.draw_ready = True               
+                    self.draw_ready = True        
+                    # TODO: 해당 if문 주석 바꿔야할듯, 기존에는 state START로 설정했는데
+                    # 현재는 ready 상태로 만드는 것으로 보임
+                    # nodejs 서버에 연결되지 않으면 여기서 더이상 진행되지 않는 것으로 보임 
                     
 
             
@@ -540,7 +543,11 @@ class Game:
                                     
                 self.print_random_consonant()
 
-                if int(animation_time) == 2:
+                # TODO 중요: 랜덤 대기 시간이 2초 이상이고, 서버와의 연결이 정상적이었다면 으로 조건 변경 
+                # 서버와의 연결이 지연 되었을 때 어떻게 처리되고 있는지 확인 필요
+                # 아래의 코드에서 서버와의 상태를 확인하는 조건을 추가해야할 듯 
+                #print("[animation_time]: %s" % (animation_time))
+                if int(animation_time) >= 2 and self.is_ws_connected == True:
                     self.ready_animation_time = 0
                     #print("[[ ReSet Reday Animation Time 0 ]]")
                     self.state = GAME_STATE_START
@@ -749,27 +756,41 @@ class Game:
     async def connect_to_server(self, event_queue): 
         print("[[ Cnnect to server ]]")
         target_ip = 'localhost'
-        async with websockets.connect("ws://%s:30001" % target_ip, ping_interval=None) as websocket:
-            self.is_ws_connected = True
-            await websocket.send("Hi server. I'm client" );          
-            self.websocket = websocket
-            
-            current_time = 0            
-            while True:
-                #print("check")
-                last_time, current_time = current_time, time.time()
-                await asyncio.sleep(1 / FPS - (current_time - last_time))                
-                now = datetime.datetime.now()
-                
-                try:
-                    msg_rcv = await websocket.recv();
-                    #print('\n\n[%s] %s' % (now, msg_rcv))
-                    #new_event = pygame.event.Event(EVENT_SOCKET_MSG, message=msg_rcv)
-                    #await event_queue.put(new_event) 
-                    self.ws_msg_process(msg_rcv)  
+        # , auto_reconnect=True, close_timeout=5
+        while True:
+            print("Connect to websocket server.")
+            try:
+                async with websockets.connect("ws://%s:30001" % target_ip, ping_interval=20) as websocket:
+                    self.is_ws_connected = True
+                    await websocket.send("Hi server. I'm client" );          
+                    self.websocket = websocket
                     
-                except Exception as e:
-                    print(e)
+                    current_time = 0            
+                    while True:
+                        print("check")
+                        last_time, current_time = current_time, time.time()
+                        await asyncio.sleep(1 / FPS - (current_time - last_time))                
+                        now = datetime.datetime.now()
+                        
+                        try:
+                            msg_rcv = await websocket.recv();
+                            #print('\n\n[%s] %s' % (now, msg_rcv))
+                            #new_event = pygame.event.Event(EVENT_SOCKET_MSG, message=msg_rcv)
+                            #await event_queue.put(new_event) 
+                            self.ws_msg_process(msg_rcv)  
+
+                        except websockets.exceptions.ConnectionClosed:
+                            self.is_ws_connected = False
+                            print("Connection is closed. Reconnecting ...")
+                            time.sleep(1) 
+                            break
+                        except Exception as e:
+                            print(e)
+            except Exception as e:
+                self.is_ws_connected = False
+                print("Connection is closed. Reconnecting ...")
+                time.sleep(1)  
+                
 
     def ws_msg_process(self, message):
         msg_obj = None
