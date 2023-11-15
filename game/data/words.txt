@@ -17,6 +17,7 @@
 {"word":"공책","consonant":"ㄱㅊ","hints":["글씨를 쓰는 백지"]}
 {"word":"사탕","consonant":"ㅅㅌ","hints":["간식"]}
 {"word":"뉴스","consonant":"ㄴㅅ","hints":["새로운 소식"]}
+{"word":"기자","consonant":"ㄱㅈ","hints":["기사를 취재하는 사람"]}
 {"word":"전개","consonant":"ㅈㄱ","hints":["내용을 진전시켜 펴 나감"]}
 {"word":"나이테","consonant":"ㄴㅇㅌ","hints":["나무의 나이"]}
 {"word":"크리에이터","consonant":"ㅋㄹㅇㅇㅌ","hints":["틱톡커","유튜버"]}
@@ -99,15 +100,23 @@
 {"word":"제주도","consonant":"ㅈㅈㄷ","hints":["혼저옵서예"]}
 {"word":"긴장","consonant":"ㄱㅈ","hints":["마음을 조이는 상태"]}
 {"word":"거품","consonant":"ㄱㅍ","hints":[""]}
-{"word":"공포","consonant":"ㄱㅍ","hints":[""]}
-{"word":"한글","consonant":"ㅎㄱ","hints":[""]}
-{"word":"학교","consonant":"ㅎㄱ","hints":[""]}
+{"word":"공포","consonant":"ㄱㅍ","hints":["무서움"]}
+{"word":"한글","consonant":"ㅎㄱ","hints":["문자"]}
+{"word":"학교","consonant":"ㅎㄱ","hints":["교육 받는 곳"]}
 {"word":"유치원","consonant":"ㅇㅊㅇ","hints":[""]}
-{"word":"마술","consonant":"ㅁㅅ","hints":[""]}
-{"word":"미술","consonant":"ㅁㅅ","hints":[""]}
-{"word":"변비","consonant":"ㅂㅂ","hints":[""]}
-{"word":"우주","consonant":"ㅇㅈ","hints":[""]}
-{"word":"목성","consonant":"ㅁㅅ","hints":[""]}
+{"word":"마술","consonant":"ㅁㅅ","hints":["눈속임"]}
+{"word":"미술","consonant":"ㅁㅅ","hints":["그림"]}
+{"word":"변비","consonant":"ㅂㅂ","hints":["응가X"]}
+{"word":"우주","consonant":"ㅇㅈ","hints":["별과 행성들이 있는 곳"]}
+{"word":"수성","consonant":"ㅅㅅ","hints":["행성"]}
+{"word":"금성","consonant":"ㄱㅅ","hints":["행성"]}
+{"word":"지구","consonant":"ㅈㄱ","hints":["행성"]}
+{"word":"화성","consonant":"ㅎㅅ","hints":["행성"]}
+{"word":"목성","consonant":"ㅁㅅ","hints":["행성"]}
+{"word":"토성","consonant":"ㅌㅅ","hints":["행성"]}
+{"word":"천왕성","consonant":"ㅊㅇㅅ","hints":["행성"]}
+{"word":"해왕성","consonant":"ㅎㅇㅅ","hints":["행성"]}
+{"word":"명왕성","consonant":"ㅁㅇㅅ","hints":["행성"]}
 {"word":"목소리","consonant":"ㅁㅅㄹ","hints":["목"]}
 {"word":"지구","consonant":"ㅈㄱ","hints":["우리가 사는 곳"]}
 {"word":"우산","consonant":"ㅇㅅ","hints":["비 올때"]}
@@ -189,7 +198,6 @@
 {"word":"단어","consonant":"ㄷㅇ","hints":["분리하여 자립적으로 쓸 수 있는 말"]}
 {"word":"문장","consonant":"ㅁㅈ","hints":["내용을 나타내는 최소 단위"]}
 {"word":"문단","consonant":"ㅁㄷ","hints":["짧은 이야기 토막"]}
-{"word":"알고리즘","consonant":"ㅇㄱㄹㅈ","hints":["공식", "문제 해결을 위한 절차,방법"]}
 {"word":"창작","consonant":"ㅊㅈ","hints":["독창적으로 만들어냄"]}
 {"word":"언론","consonant":"ㅇㄹ","hints":["매체를 통하여 사실을 밝힘", "문제에 대하여 여론을 형성"]}
 {"word":"여론","consonant":"ㅇㄹ","hints":["사회 대중의 공통된 의견"]}
@@ -200,7 +208,7 @@
 {"word":"에어팟","consonant":"ㅇㅇㅍ","hints":["Apple", "블루투스이어폰"]}
 {"word":"아이폰","consonant":"ㅇㅇㅍ","hints":["Apple", "스마트폰"]}
 {"word":"반지하","consonant":"ㅂㅈㅎ","hints":["절반이 지면 아래에 있는"]}
-{"word":"","consonant":"","hints":[""]}
+{"word":"아스파탐","consonant":"ㅇㅅㅍㅌ","hints":["인공 감미료"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -213,9 +221,6 @@
 {"word":"화가","consonant":"ㅎㄱ","hints":["그림 그리는 사람"]}
 {"word":"인상주의","consonant":"ㅇㅅㅈㅇ","hints":["예술의 경향 중 하나", "작가가 받은 순간적인 인상을 표현"]}
 {"word":"모네","consonant":"ㅁㄴ","hints":["인상주의 화가", "클로드 ㅁㄴ"]}
-{"word":"베토벤","consonant":"ㅂㅌㅂ","hints":["독일의 작곡가", "청각장애를 가짐"]}
-{"word":"바흐","consonant":"ㅂㅎ","hints":["바로크 시대 작곡가", "음악의 아버지"]}
-{"word":"헨델","consonant":"ㅎㄷ","hints":["바로크 시대 작곡가", "음악의 어머니"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -313,7 +318,7 @@
 {"word":"상사","consonant":"ㅅㅅ","hints":["회사"]}
 {"word":"휴가","consonant":"ㅎㄱ","hints":["회사"]}
 {"word":"근무","consonant":"ㄱㅁ","hints":["회사"]}
-{"word":"퇴사","consonant":"ㅌㅅ","hints":["회사"]}
+{"word":"퇴사","consonant":"ㅌㅅ","hints":["회사","회사를 그만둠"]}
 {"word":"입사","consonant":"ㅇㅅ","hints":["회사"]}
 {"word":"출근","consonant":"ㅊㄱ","hints":["회사"]}
 {"word":"퇴근","consonant":"ㅌㄱ","hints":["회사"]}
@@ -325,6 +330,9 @@
 {"word":"재무","consonant":"ㅈㅁ","hints":["돈이나 재산에 관한 일"]}
 {"word":"책임자","consonant":"ㅊㅇㅈ","hints":["어떤 일에 대하여 책임이 있는 사람"]}
 {"word":"집단","consonant":"ㅈㄷ","hints":["여럿이 모여 이룬 모임"]}
+{"word":"실업","consonant":"ㅅㅇ","hints":["생업을 잃음"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
@@ -402,25 +410,111 @@
 {"word":"혁명","consonant":"ㅎㅁ","hints":["관습, 방식을 깨뜨림"]}
 {"word":"독재","consonant":"ㄷㅈ","hints":["히틀러", "모든 권력을 차지하여 독단으로 처리함"]}
 {"word":"독재자","consonant":"ㄷㅈㅈ","hints":["히틀러"]}
-{"word":"틱톡","consonant":"ㅌㅌ","hints":[""]}
 {"word":"제습기","consonant":"ㅈㅅㄱ","hints":["습기 제거"]}
 {"word":"가습기","consonant":"ㄱㅅㄱ","hints":["습도"]}
 {"word":"조사","consonant":"ㅈㅅ","hints":["사물의 내용을 알기 위해 자세히 살펴보거나 찾아봄"]}
 {"word":"녹","consonant":"ㄴ","hints":["산화 작용으로 쇠붙이에 생기는 물질", "붉거나 푸름"]}
 {"word":"염치","consonant":"ㅇㅊ","hints":["체면을 차릴 줄 알고 부끄러움을 아는 마음"]}
 {"word":"화재","consonant":"ㅎㅈ","hints":["불로 인한 재난"]}
+{"word":"청약","consonant":"ㅊㅇ","hints":["계약을 체결할 것을 목표로 하는 의사 표시"]}
+{"word":"분양","consonant":"ㅂㅇ","hints":["전체를 여러 부분으로 갈라 여럿에게 나누어 줌"]}
+{"word":"블로그","consonant":"ㅂㄹㄱ","hints":["관심사에 따라 칼럼,일기 등을 올리는 사이트", "네이버 ㅂㄹㄱ"]}
+{"word":"가면","consonant":"ㄱㅁ","hints":["얼굴을 감추거나 꾸미는 물건"]}
+{"word":"병원","consonant":"ㅂㅇ","hints":["환자를 진찰,치료 하는 곳"]}
+{"word":"학사","consonant":"ㅎㅅ","hints":["대학의 학부 과정을 마친 학위"]}
+{"word":"석사","consonant":"ㅅㅅ","hints":["대학원"]}
+{"word":"박사","consonant":"ㅂㅅ","hints":["어떤 일에 정통하거나 숙달된 사람","대학원의 박사 과정을 마친 학위"]}
+{"word":"아시안게임","consonant":"ㅇㅅㅇㄱㅇ","hints":["아시아권 국제 운동 경기 대회"]}
+{"word":"올림픽","consonant":"ㅇㄹㅍ","hints":["4년마다 열리는 국제 운동 경기 대회"]}
+{"word":"월드컵","consonant":"ㅇㄷㅋ","hints":["스포츠 경기의 국제 선수권 대회","축구.배구.골프"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
 
+{"word":"찜질방","consonant":"ㅉㅈㅂ","hints":["사우나"]}
+{"word":"미용실","consonant":"ㅁㅇㅅ","hints":["커트.파마"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
+
+{"word":"디자인","consonant":"ㄷㅈㅇ","hints":["의상,제품,건축 등의 설계나 도안"]}
 
 
 {"word":"인공지능","consonant":"ㅇㄱㅈㄴ","hints":["지능을 가지는 컴퓨터"]}
 {"word":"해킹","consonant":"ㅎㅋ","hints":["다른 시스템에 침입해 유해한 영향을 끼치는 행위"]}
 {"word":"보안","consonant":"ㅂㅇ","hints":["안전을 유지함"]}
+{"word":"알고리즘","consonant":"ㅇㄱㄹㅈ","hints":["공식", "문제 해결을 위한 절차,방법"]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
+
+{"word":"수국","consonant":"ㅅㄱ","hints":["꽃"]}
+{"word":"백련","consonant":"ㅂㄹ","hints":["꽃"]}
+{"word":"홍련","consonant":"ㅎㄹ","hints":["꽃"]}
+{"word":"코스모스","consonant":"ㅋㅅㅁㅅ","hints":["꽃"]}
+{"word":"국화","consonant":"ㄱㅎ","hints":["꽃"]}
+{"word":"무궁화","consonant":"ㅁㄱㅎ","hints":["꽃"]}
+{"word":"철쭉","consonant":"ㅊㅉ","hints":["꽃"]}
+{"word":"백합","consonant":"ㅂㅎ","hints":["꽃"]}
+{"word":"장미","consonant":"ㅈㅁ","hints":["꽃"]}
+{"word":"해바라기","consonant":"ㅎㅂㄹㄱ","hints":["꽃"]}
+{"word":"나팔꽃","consonant":"ㄴㅍㄲ","hints":["꽃"]}
+{"word":"","consonant":"","hints":["꽃"]}
+{"word":"","consonant":"","hints":["꽃"]}
+{"word":"","consonant":"","hints":["꽃"]}
+{"word":"","consonant":"","hints":["꽃"]}
+{"word":"","consonant":"","hints":["꽃"]}
+{"word":"","consonant":"","hints":["꽃"]}
+{"word":"","consonant":"","hints":["꽃"]}
+
+{"word":"큰북","consonant":"ㅋㅂ","hints":["악기","타악기"]}
+{"word":"작은북","consonant":"ㅈㅇㅂ","hints":["악기","타악기"]}
+{"word":"심벌즈","consonant":"ㅅㅂㅈ","hints":["악기","타악기"]}
+{"word":"캐스터네츠","consonant":"ㅋㅅㅌㄴㅊ","hints":["악기","타악기"]}
+{"word":"트라이앵글","consonant":"ㅌㄹㅇㅇㄱ","hints":["악기","타악기"]}
+{"word":"북","consonant":"ㅂ","hints":["악기","타악기"]}
+{"word":"꽹과리","consonant":"ㄲㄱㄹ","hints":["악기","타악기"]}
+{"word":"장구","consonant":"ㅈㄱ","hints":["악기","타악기"]}
+{"word":"징","consonant":"ㅈ","hints":["악기","타악기"]}
+{"word":"실로폰","consonant":"ㅅㄹㅍ","hints":["악기","타악기"]}
+{"word":"비브라폰","consonant":"ㅂㅂㄹㅍ","hints":["악기","타악기"]}
+{"word":"마림바","consonant":"ㅁㄹㅂ","hints":["악기","타악기"]}
+{"word":"팀파니","consonant":"ㅌㅍㄴ","hints":["악기","타악기"]}
+{"word":"플룻","consonant":"ㅍㄹ","hints":["악기","관악기","목관 악기"]}
+{"word":"클라리넷","consonant":"ㅋㄹㄹㄴ","hints":["악기","관악기","징징이가 부는 것"]}
+{"word":"오보에","consonant":"ㅇㅂㅇ","hints":["악기","관악기","목관 악기"]}
+{"word":"바순","consonant":"ㅂㅅ","hints":["악기","관악기","목관 악기"]}
+{"word":"호른","consonant":"ㅎㄹ","hints":["악기","관악기","금관 악기"]}
+{"word":"트럼펫","consonant":"ㅌㄹㅍ","hints":["악기","관악기","금관 악기"]}
+{"word":"코넷","consonant":"ㅋㄴ","hints":["악기","관악기","금관 악기"]}
+{"word":"트롬본","consonant":"ㅌㄹㅂ","hints":["악기","관악기","금관 악기"]}
+{"word":"튜바","consonant":"ㅌㅂ","hints":["악기","관악기","금관 악기"]}
+
+{"word":"하프","consonant":"ㅎㅍ","hints":["악기","현악기","발현 악기"]}
+{"word":"기타","consonant":"ㄱㅌ","hints":["악기","현악기","발현 악기"]}
+{"word":"하프시코드","consonant":"ㅎㅍㅅㅋㄷ","hints":["악기","현악기","발현 악기"]}
+{"word":"만돌린","consonant":"ㅁㄷㄹ","hints":["악기","현악기","발현 악기"]}
+{"word":"가야금","consonant":"ㄱㅇㄱ","hints":["악기","현악기","발현 악기"]}
+{"word":"바이올린","consonant":"ㅂㅇㅇㄹ","hints":["악기","현악기","찰현 악기"]}
+{"word":"비올라","consonant":"ㅂㅇㄹ","hints":["악기","현악기","찰현 악기"]}
+{"word":"첼로","consonant":"ㅊㄹ","hints":["악기","현악기","찰현 악기"]}
+{"word":"콘트라베이스","consonant":"ㅋㅌㄹㅂㅇㅅ","hints":["악기","현악기","찰현 악기"]}
+
+{"word":"피아노","consonant":"ㅍㅇㄴ","hints":["악기","건반 악기"]}
+{"word":"파이프오르간","consonant":"ㅍㅇㅍㅇㄹㄱ","hints":["악기","건반 악기"]}
+{"word":"아코디언","consonant":"ㅇㅋㄷㅇ","hints":["악기","건반 악기"]}
+
+{"word":"아카펠라","consonant":"ㅇㅋㅍㄹ","hints":["반주 없는 합창"]}
+{"word":"오케스트라","consonant":"ㅇㅋㅅㅌㄹ","hints":["관현악을 연주하는 단체"]}
+{"word":"슈베르트","consonant":"ㅅㅂㄹㅌ","hints":["작곡가","가곡의 왕"]}
+{"word":"베토벤","consonant":"ㅂㅌㅂ","hints":["독일의 작곡가", "청각장애를 가짐"]}
+{"word":"바흐","consonant":"ㅂㅎ","hints":["바로크 시대 작곡가", "음악의 아버지"]}
+{"word":"헨델","consonant":"ㅎㄷ","hints":["바로크 시대 작곡가", "음악의 어머니"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+
 
 
 {"word":"생물","consonant":"ㅅㅁ","hints":["생명을 가지는 물체"]}
@@ -439,6 +533,12 @@
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
+
+{"word":"비타민","consonant":"ㅂㅌㅁ","hints":["유기 화합물",""]}
+{"word":"밀크씨슬","consonant":"","hints":["간 건강"]}
+{"word":"아르기닌","consonant":"","hints":["아미노산의 하나","근육 회복"]}
+{"word":"","consonant":"","hints":["영양제",""]}
+{"word":"","consonant":"","hints":["영양제",""]}
 
 
 {"word":"역사","consonant":"ㅇㅅ","hints":["인류 사회의 기록"]}
@@ -537,5 +637,15 @@
 {"word":"","consonant":"","hints":[""]}
 {"word":"","consonant":"","hints":[""]}
 
+
+
+{"word":"페이스북","consonant":"ㅍㅇㅅㅂ","hints":["SNS"]}
+{"word":"인스타그램","consonant":"ㅇㅅㅌㄱㄹ","hints":["SNS"]}
+{"word":"트위터","consonant":"ㅌㅇㅌ","hints":["SNS"]}
+{"word":"틱톡","consonant":"ㅌㅌ","hints":["동영상 플랫폼","지금 보고 있는 거"]}
+{"word":"유튜브","consonant":"ㅇㅌㅂ","hints":["구글","동영상 플랫폼"]}
+{"word":"","consonant":"","hints":["SNS"]}
+{"word":"","consonant":"","hints":["SNS"]}
+{"word":"","consonant":"","hints":["SNS"]}
 
 

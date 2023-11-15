@@ -3,12 +3,13 @@
 {"word":"콜라","consonant":"ㅋㄹ","hints":["음료",""]}
 {"word":"환타","consonant":"ㅎㅌ","hints":["음료",""]}
 {"word":"녹차","consonant":"ㄴㅊ","hints":["음료",""]}
-{"word":"소주","consonant":"ㅅㅈ","hints":["음료",""]}
-{"word":"맥주","consonant":"ㅁㅈ","hints":["음료",""]}
-{"word":"와인","consonant":"ㅇㅇ","hints":["음료",""]}
-{"word":"위스키","consonant":"ㅇㅅㅋ","hints":["음료",""]}
-{"word":"칵테일","consonant":"ㅋㅌㅇ","hints":["음료","여러 종류의 술을 혼합하여 만든 술"]}
-{"word":"카페인","consonant":"ㅋㅍㅇ","hints":[""]}
+{"word":"소주","consonant":"ㅅㅈ","hints":["주류",""]}
+{"word":"맥주","consonant":"ㅁㅈ","hints":["주류",""]}
+{"word":"와인","consonant":"ㅇㅇ","hints":["주류",""]}
+{"word":"위스키","consonant":"ㅇㅅㅋ","hints":["주류",""]}
+{"word":"칵테일","consonant":"ㅋㅌㅇ","hints":["주류","여러 종류의 술을 혼합하여 만든 술"]}
+{"word":"카페인","consonant":"ㅋㅍㅇ","hints":["커피"]}
+{"word":"탕후루","consonant":"ㅌㅎㄹ","hints":["설탕+과일",""]}
 
 
 {"word":"채소","consonant":"ㅊㅅ","hints":["밭에서 기르는 농작물",""]}
@@ -26,6 +27,11 @@
 {"word":"오이","consonant":"ㅇㅇ","hints":["채소",""]}
 {"word":"버섯","consonant":"ㅂㅅ","hints":["그늘진 땅이나 썩은 나무에서 자람",""]}
 {"word":"양송이","consonant":"ㅇㅅㅇ","hints":["버섯류",""]}
+{"word":"옥수수","consonant":"ㅇㅅㅅ","hints":["식물","콘"]}
+{"word":"우엉","consonant":"ㅇㅇ","hints":["뿌리채소",""]}
+{"word":"연근","consonant":"ㅇㄱ","hints":["연의 줄기",""]}
+{"word":"토란","consonant":"ㅌㄹ","hints":["외떡잎식물",""]}
+{"word":"오미자","consonant":"ㅇㅁㅈ","hints":["열매",""]}
 {"word":"","consonant":"","hints":["채소",""]}
 {"word":"","consonant":"","hints":["채소",""]}
 {"word":"","consonant":"","hints":["채소",""]}
@@ -86,10 +92,15 @@
 {"word":"시나몬","consonant":"ㅅㄴㅁ","hints":["향신료",""]}
 {"word":"간장","consonant":"ㄱㅈ","hints":["조미료",""]}
 {"word":"된장","consonant":"ㄷㅈ","hints":["메주",""]}
+{"word":"고추장","consonant":"ㄱㅊㅈ","hints":["장","비빔밥 필수 재료"]}
+{"word":"참기름","consonant":"ㅊㄱㄹ","hints":["기름","참깨로 짠 기름"]}
+{"word":"들기름","consonant":"ㄷㄱㄹ","hints":["기름","들깨로 짠 기름"]}
+{"word":"다시다","consonant":"ㄷㅅㄷ","hints":["조미료","MSG"]}
 {"word":"","consonant":"","hints":["조미료",""]}
 {"word":"","consonant":"","hints":["조미료",""]}
 {"word":"","consonant":"","hints":["조미료",""]}
-{"word":"","consonant":"","hints":["조미료",""]}
+
+
 
 {"word":"카레","consonant":"ㅋㄹ","hints":["음식"]}
 {"word":"짜장면","consonant":"ㅉㅈㅁ","hints":["음식"]}
@@ -104,7 +115,7 @@
 {"word":"보쌈","consonant":"ㅂㅆ","hints":["음식"]}
 {"word":"두부","consonant":"ㄷㅂ","hints":["콩으로 만든"]}
 {"word":"건두부","consonant":"ㄱㄷㅂ","hints":["두부"]}
-{"word":"마라탕","consonant":"ㅁㄹㅌ","hints":["음식"]}
+{"word":"마라탕","consonant":"ㅁㄹㅌ","hints":["음식","중식"]}
 {"word":"불닭볶음면","consonant":"ㅂㄷㅂㅇㅁ","hints":["음식", "라면"]}
 {"word":"열라면","consonant":"ㅇㄹㅁ","hints":["음식", "라면"]}
 {"word":"참깨라면","consonant":"ㅊㄲㄹㅁ","hints":["음식", "라면"]}
@@ -112,8 +123,22 @@
 {"word":"삼겹살","consonant":"ㅅㄱㅅ","hints":["음식", "돼지"]}
 {"word":"하몽","consonant":"ㅎㅁ","hints":["음식", "소금에 절여 건조시킨 햄"]}
 {"word":"햄","consonant":"ㅎ","hints":["음식", "돼지고기를 소금에 절여 훈제한 가공식품"]}
+{"word":"샐러드","consonant":"ㅅㄹㄷ","hints":["음식", "야채"]}
+{"word":"","consonant":"","hints":["음식"]}
+{"word":"","consonant":"","hints":["음식"]}
+{"word":"","consonant":"","hints":["음식"]}
+{"word":"","consonant":"","hints":["음식"]}
+{"word":"","consonant":"","hints":["음식"]}
 {"word":"","consonant":"","hints":["음식"]}
 
+
+{"word":"약과","consonant":"ㅇㄱ","hints":["음식","전통 과자"]}
+{"word":"식혜","consonant":"ㅅㅎ","hints":["전통 음료"]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
+{"word":"","consonant":"","hints":[""]}
 
 
 

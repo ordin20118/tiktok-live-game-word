@@ -69,7 +69,17 @@
 {"word":"메뚜기","consonant":"ㅁㄸㄱ","hints":["곤충",""]}
 {"word":"귀뚜라미","consonant":"ㄱㄸㄹㅁ","hints":["곤충",""]}
 {"word":"지렁이","consonant":"ㅈㄹㅇ","hints":["징그러움","자웅동체"]}
-{"word":"","consonant":"","hints":["곤충",""]}
+{"word":"매미","consonant":"ㅁㅁ","hints":["곤충","여름"]}
+{"word":"무당벌레","consonant":"ㅁㄷㅂㄹ","hints":["곤충","빨강 검정"]}
+{"word":"장수풍뎅이","consonant":"ㅈㅅㅍㄷㅇ","hints":["곤충",""]}
+{"word":"모기","consonant":"ㅁㄱ","hints":["여름","곤충"]}
+{"word":"나비","consonant":"ㄴㅂ","hints":["곤충",""]}
+{"word":"사슴벌레","consonant":"ㅅㅅㅂㄹ","hints":["곤충",""]}
+{"word":"번데기","consonant":"ㅂㄷㄱ","hints":["곤충",""]}
+{"word":"장수하늘소","consonant":"ㅈㅅㅎㄴㅅ","hints":["곤충",""]}
+{"word":"소금쟁이","consonant":"ㅅㄱㅈㅇ","hints":["곤충",""]}
+{"word":"잠자리","consonant":"ㅈㅈㄹ","hints":["곤충",""]}
+{"word":"반딧불이","consonant":"ㅂㄷㅂㄹ","hints":["곤충",""]}
 {"word":"","consonant":"","hints":["곤충",""]}
 {"word":"","consonant":"","hints":["곤충",""]}
 {"word":"","consonant":"","hints":["곤충",""]}

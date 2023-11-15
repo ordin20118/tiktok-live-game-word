@@ -692,59 +692,7 @@ class Game:
                 for rank in self.top_ranks:                        
                     f.write(json.dumps(rank, ensure_ascii=False) + '\n')
                 f.close()
-                break
-            elif event.type == EVENT_SOCKET_MSG:
-                #print("event", event)               
-                msg_obj = None
-                msg_obj = json.loads(event.message)
-                #print("[[ Message Object ]]")                    
-                #print(msg_obj)                
-                
-                if msg_obj != None:
-                    if msg_obj['code'] == MSG_CODE_COMMENT and self.state == GAME_STATE_PLAYING:
-                        # TODO: 프로필 캐시 없다면 저장
-                        # 채팅에서 정답 확인
-                        if msg_obj['comment'].find(self.now_word.get('word')) != -1:
-                            # 정답을 맞혔다면
-                            print("[%s] 정답!" % msg_obj['nickname'])
-                            self.right_user_queue.append(msg_obj)
-                            #self.state = GAME_STATE_OVER
-                            self.over_animation_time = pygame.time.get_ticks()
-
-                    elif msg_obj['code'] == MSG_CODE_LIKE and self.state == GAME_STATE_PLAYING:
-                        #print("[%s] likes count: %d" %(msg_obj['nickname'], msg_obj['like_count']))
-                        # TODO: 총 하트 수 저장
-                        pass
-
-                    elif msg_obj['code'] == MSG_CODE_DONATION:
-                        print("[%s] dontaion: %d" %(msg_obj['nickname'], msg_obj['coin']))
-
-                        # 1 <= donation <= 99   => 힌트
-                        # 100 <= donation       => 패스
-
-                        # TODO: 사용자의 user_id로 도네이션 총액 저장
-                        user_id = msg_obj['user_id']
-
-                        # must - 도네이션 애니메이션만 출력
-                        self.donation_queue.append(msg_obj)
-
-                        # 플레이 상태라면
-                        if self.state == GAME_STATE_PLAYING:
-                            # 도네이션 액수 확인
-                            diamondCnt = msg_obj['coin']
-                            if diamondCnt >= 1 and diamondCnt < 100:
-                                # 힌트
-                                pass                         
-                            elif diamondCnt >= 100:
-                                # 패스
-                                pass
-                    elif msg_obj['code'] == MSG_CODE_SHARE:
-                        # TODO: 총 공유 수 저장
-                        pass                    
-                    elif msg_obj['code'] == MSG_CODE_QUIT:
-                        #await event_queue.put(pygame.event.Q)
-                        pass
-                    
+                break                    
             else:
                 pass
                 #print("event", event)
@@ -774,11 +722,7 @@ class Game:
                         
                         try:
                             msg_rcv = await websocket.recv();
-                            #print('\n\n[%s] %s' % (now, msg_rcv))
-                            #new_event = pygame.event.Event(EVENT_SOCKET_MSG, message=msg_rcv)
-                            #await event_queue.put(new_event) 
                             self.ws_msg_process(msg_rcv)  
-
                         except websockets.exceptions.ConnectionClosed:
                             self.is_ws_connected = False
                             print("Connection is closed. Reconnecting ...")
