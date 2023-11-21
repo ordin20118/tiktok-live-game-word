@@ -117,6 +117,7 @@ class Game:
         self.message_queue = []     # 웹소켓 전송 메시지큐
         self.donation_queue = []    # 도네이션 큐
         self.right_user_queue = []  # 정답자 큐
+        self.api_queue = []         # API 호출 큐
 
         ### 시간 관련 변수 ###
         self.npc_move_term = 500       # NPC 자동 움직임 시간 간격
@@ -714,8 +715,7 @@ class Game:
                     self.websocket = websocket
                     
                     current_time = 0            
-                    while True:
-                        print("check")
+                    while True:                        
                         last_time, current_time = current_time, time.time()
                         await asyncio.sleep(1 / FPS - (current_time - last_time))                
                         now = datetime.datetime.now()
@@ -744,7 +744,7 @@ class Game:
         
         if msg_obj != None:
             if msg_obj['code'] == MSG_CODE_COMMENT and self.state == GAME_STATE_PLAYING:
-                print("[%s]: %s" %(msg_obj['nickname'], msg_obj['comment']))
+                #print("[%s]: %s" %(msg_obj['nickname'], msg_obj['comment']))
                 self.total_msg_count += 1
                 
                 if self.total_msg_count % 1000 == 0:
@@ -756,8 +756,9 @@ class Game:
                 if msg_obj['comment'].find(self.now_word.get('word')) != -1:
                     print("\n\n 정답!!! \n\n")
                     # 정답을 맞혔다면                    
+                    msg_obj['api_path'] = 'wordgame/correct'
+                    msg_obj['word'] = self.now_word.get('word')
                     self.right_user_queue.append(msg_obj)
-                    #self.state = GAME_STATE_OVER
                     self.over_animation_time = pygame.time.get_ticks()
                     
             elif msg_obj['code'] == MSG_CODE_LIKE and self.state == GAME_STATE_PLAYING:
@@ -830,14 +831,14 @@ class Game:
 
     async def send_word_to_server(self):
         # send message for http
-        current_time = 0       
+        current_time = 0
         while True:
             last_time, current_time = current_time, time.time()
             await asyncio.sleep(1 / FPS - (current_time - last_time))          
             if self.send_word != None:
                 URL = "http://localhost:30001/set_word?word=%s"%self.send_word
                 response = requests.get(URL)
-                #print("[SEND WORD TO SERVER][%s] - [%s]" % (response.status_code, response.text))    
+                print("[SEND WORD TO SERVER][%s] - [%s]" % (response.status_code, response.text))    
                 self.send_word = None
                 
 
@@ -852,6 +853,7 @@ class Game:
         print_right_user_task = asyncio.ensure_future(self.print_user())
         donation_task = asyncio.ensure_future(self.print_donation())
         send_word_task = asyncio.ensure_future(self.send_word_to_server())
+        call_api_task = asyncio.ensure_future(self.call_api())
         
         try:
             loop.run_forever()
@@ -869,6 +871,7 @@ class Game:
             donation_task.cancel()
             print_right_user_task.cancel()
             send_word_task.cancel()
+            call_api_task.cancel()
         pygame.quit()
 
 
@@ -1011,6 +1014,9 @@ class Game:
 
                     print("[print_user]")
                     right_user_obj = self.right_user_queue[0]
+                    right_user_obj['profile_url'] = right_user_obj['profile_img']
+                    right_user_obj['tmp_profile_url'] = right_user_obj['profile_img']
+                    self.api_queue.append(right_user_obj)
                     #print(donation_obj)
                     user_id = right_user_obj['user_id']
                     
@@ -1146,6 +1152,26 @@ class Game:
             self.SCREEN.blit(word_text, (word_text_rect.x, word_text_rect.y))            
 
             space_x += word_size[0] + term_width
+
+    # TODO
+    async def call_api(self):        
+        current_time = 0       
+        while True:
+            last_time, current_time = current_time, time.time()
+            await asyncio.sleep(1 / FPS - (current_time - last_time))          
+            
+            if len(self.api_queue) > 0:
+                try:
+                    msg_obj = self.api_queue[0]                    
+                    await asyncio.sleep(1 / FPS - (current_time - last_time))          
+                    URL = "http://localhost:30001/api/%s"%msg_obj['api_path']
+                    headers = {'Content-Type': 'application/json; charset=utf-8'}
+                    response = requests.post(URL, headers=headers, data=json.dumps(msg_obj))
+                    print("[Call API RESPONSE][%s] - [%s]" % (response.status_code, response.text))                            
+                    del self.api_queue[0]                 
+                except Exception as e:
+                    print("[call api error]:%s" % e)
+                    del self.api_queue[0]
 
 
             

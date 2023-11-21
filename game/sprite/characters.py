@@ -188,6 +188,7 @@ class DogSprite(pygame.sprite.Sprite, BaseObject):
             chat = self.game.main_font_15.render(msg, True, self.game.COLOR_BLACK)
             chat_rect = chat.get_rect()
             chat_size = chat_rect.size
+            
             # 채팅창
             chat_back_rect = pygame.draw.rect(self.game.SCREEN, self.game.COLOR_WHITE, [self.rect.x, self.rect.y - 30, chat_size[0] + 20, chat_size[1] + 10])
             chat_rect.centerx = chat_back_rect.centerx
